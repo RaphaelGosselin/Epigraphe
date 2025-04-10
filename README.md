@@ -1,5 +1,6 @@
 # Epigraphe
 
-# 10 Avril 2025 
+---------
+# 10 Avril
 création du GitHub,
-création des fichiers de trav
+création des fichiers de travail
