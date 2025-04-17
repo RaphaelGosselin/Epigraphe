@@ -1,8 +1,6 @@
 footer {
     background-color: var(--color-background);
     text-align: center;
-    padding-right: 40px;
-    padding-left:40px;
 }
 
 .footer__nav ul{
@@ -12,8 +10,42 @@ footer {
  list-style: none;
  
 }
-
-
+.facebook,
+.instagram,
+.X
+ {
+    width:25px;
+    height:25px;
+}
+.youtube {
+    width:35px;
+    height: 26px;
+}
+ @media (min-width:600px) {
+    footer {
+        background-color: var(--color-background);
+        text-align: center;
+    }
+    
+    .footer__nav ul{
+     display:flex;
+     flex-direction: row;
+     text-align: center;
+     list-style: none;
+     
+    }
+    .facebook,
+    .instagram,
+    .X
+     {
+        width:35px;
+        height:35px;
+    }
+    .youtube {
+        width:45px;
+        height: 35px;
+    }
+ }
 
 
 
