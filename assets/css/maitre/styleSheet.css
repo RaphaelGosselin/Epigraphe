@@ -5,3 +5,7 @@
 @import url(../normalize_typo_utilitaires/normalize.css);
 /** Utilitaires **/
 @import url(../normalize_typo_utilitaires/utilitaires.css);
+/** Header **/
+@import url(../footer_header/header.css);
+/** Footer **/
+@import url(../footer_header/footer.css);
