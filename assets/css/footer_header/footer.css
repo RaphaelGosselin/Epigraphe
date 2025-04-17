@@ -1,0 +1,19 @@
+footer {
+    background-color: var(--color-background);
+    text-align: center;
+    padding-right: 40px;
+    padding-left:40px;
+}
+
+.footer__nav ul{
+ display:flex;
+ flex-direction: column;
+ text-align: center;
+ list-style: none;
+ 
+}
+
+
+
+
+
