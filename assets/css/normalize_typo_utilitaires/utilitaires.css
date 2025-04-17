@@ -8,11 +8,11 @@
         GRIS TRANSPARENT: rgba(255, 255, 255, 0.25)
         Valeur de border-radius des éléments :
     */
-    --color-text: #fff;
-    --color-Y: #dba70d;
-    --color-G: rgba(255, 255, 255, 0.25);
+    --color-background: #F7EFDC;
+    --color-btn: #C2A087;
+    --color-texte: #3D290D;
     --font-family: Raleway, sans-serif;
-    --border:3px solid #dba70d;
+    --color-border: #A64E20;
 }
 
 /*** Clearfix ***/
