@@ -2,9 +2,11 @@ nav>ul {
     list-style: none;
     padding: 0;
 }
-.logo {
+.header__img {
+    width: 10rem;
+}
+.header__logo {
     width: 100%;
-
 }
 header {
     text-align: center;
