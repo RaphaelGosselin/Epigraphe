@@ -2,41 +2,74 @@ footer {
     background-color: var(--color-background);
     text-align: center;
 }
-
+/*Marges pour les paragraphes du footer*/
+.footer__paragraphe1{
+  margin-left:30px;
+  margin-right: 30px;
+}
+.footer__paragraphe2{
+    margin-left:30px;
+    margin-right: 30px;
+}
+.footer__paragraphe3{
+    margin-left:30px;
+    margin-right: 30px;
+}
 .footer__nav ul{
  display:flex;
  flex-direction: column;
  text-align: center;
  list-style: none;
- 
 }
+a {
+    color: var(--color-btn);
+}
+/*Réseaux sociaux*/
 .facebook,
 .instagram,
 .X
  {
     width:25px;
     height:25px;
+    margin-left:30px;
+    margin-right:30px;
 }
 .youtube {
     width:35px;
     height: 26px;
+    
+    
 }
+/*Requête média*/
  @media (min-width:600px) {
     footer {
         background-color: var(--color-background);
         text-align: center;
+        
     }
     
     .footer__nav ul {
         display:flex;
         flex-direction: row;
         text-align: match-parent;
-        justify-content: center;
+        justify-content: space-evenly;
         list-style: none;
+        ;
     }
-    a {
-        padding:10px;
-    }
+/*Marges pour les paragraphes du footer*/
+.footer__paragraphe1{
+  margin-left:5%;
+  margin-right: 5%;
+}
+.footer__paragraphe2{
+    margin-left:10%;
+    margin-right: 10%;
+}
+.footer__paragraphe3{
+    margin-left:10%;
+    margin-right: 10%;
+
+}
 
     .facebook,
     .instagram,
