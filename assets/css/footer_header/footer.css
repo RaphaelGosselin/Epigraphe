@@ -27,13 +27,17 @@ footer {
         text-align: center;
     }
     
-    .footer__nav ul{
-     display:flex;
-     flex-direction: row;
-     text-align: center;
-     list-style: none;
-     
+    .footer__nav ul {
+        display:flex;
+        flex-direction: row;
+        text-align: match-parent;
+        justify-content: center;
+        list-style: none;
     }
+    a {
+        padding:10px;
+    }
+
     .facebook,
     .instagram,
     .X
