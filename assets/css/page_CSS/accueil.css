@@ -12,10 +12,13 @@ html {
     text-align: center;
     padding-bottom: 80px;
     padding-top:50px;
+    max-width: 100rem;
+    margin: 0 auto;
 }
 .presentation {
     border:10px solid var(--color-border);
     max-width:100%;
+
 }
 
 /*TEXTE ET IMAGE INFORMATIVES */
@@ -26,6 +29,8 @@ html {
       align-items: center;
       justify-content: space-between;
       padding:40px;
+      max-width: 100rem;
+    margin: 0 auto;
     
     }
     .intro-image img {
