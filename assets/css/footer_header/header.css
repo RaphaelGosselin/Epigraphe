@@ -1,12 +1,11 @@
 nav>ul {
     list-style: none;
+    padding: 0;
 }
 .logo {
     width: 100%;
 
 }
 header {
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
 }
