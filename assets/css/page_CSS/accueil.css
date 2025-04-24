@@ -1,0 +1,43 @@
+html {
+    background-color: var(--color-page);
+    background-image: url(/assets/images/blackline.png) ;
+    background-color: rgba(228,216,202,0.8);
+    background-blend-mode: lighten;
+    background-size: 55%;
+
+}
+/*VIDEO */
+.video-container {
+    position:relative;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top:50px;
+}
+.presentation {
+    border:10px solid var(--color-border);
+    max-width:100%;
+}
+
+/*TEXTE ET IMAGE INFORMATIVES */
+@media (min-width:600px) {
+    .section-intro{
+    position:relative;
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding:40px;
+    
+    }
+    .intro-image img {
+    max-width: 100%;
+      height: auto;
+      border: 8px solid black;
+    }
+    .intro-text {
+        max-width: 50%;
+      padding-left: 40px;
+      color: #4c2e1a;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+}

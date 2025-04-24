@@ -22,7 +22,7 @@ footer {
  list-style: none;
 }
 a {
-    color: var(--color-btn);
+    color: var(--color-border);
 }
 /*Réseaux sociaux*/
 .facebook,
