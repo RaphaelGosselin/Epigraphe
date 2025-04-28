@@ -46,3 +46,21 @@ html {
       line-height: 1.6;
     }
 }
+.paragraphe-btn {
+  text-align: center;
+  color: #4c2e1a;
+}
+.btn-chasse {
+  padding:10px;
+  margin: 20px;
+}
+.btn-accueil {
+  text-align: center;
+}
+.btn-chasse {
+  border-radius: 10px;
+  font-family: abril fatface, sans-serif;
+  background-color: var(--color-btn);
+  color: #E4D8CA;
+}
+

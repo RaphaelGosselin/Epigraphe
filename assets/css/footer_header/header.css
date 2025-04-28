@@ -54,7 +54,7 @@ nav>ul {
     padding-left: 1.2rem;
 }
 .nav__control {
-    background-color: var(--color-btn);
+    background-color: var(--color-nav);
     color: var(--color-texte);
     border: none;
     padding: 10px;
@@ -107,7 +107,7 @@ nav>ul {
 @media (min-width: 700px) {
     .nav__list-item {
         display: inline-block;
-        background-color: var(--color-btn);
+        background-color: var(--color-nav);
     }
 }
 
