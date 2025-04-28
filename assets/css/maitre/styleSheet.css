@@ -12,6 +12,14 @@
 /** Accueil CSS**/
 @import url(../page_CSS/accueil.css);
 /* main */
+.personnage__figure {
+    margin: 0;
+    text-align: center;
+}
+.personnage__figure img {
+    max-width: 400px;
+}
+@media(min-width:700px){
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -22,10 +30,10 @@ main {
     justify-content: space-between;
 }
 .personnage__figure {
-    width: calc(100%/3);
-    max-width: 300px;
+    max-width: calc(100%/3);
     margin: 0;
 }
 .personnage__figure img {
-    max-width: 300px;
+    max-width: 330px;
+}
 }
