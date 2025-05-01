@@ -158,7 +158,7 @@ main p{
 }
 @media (min-width: 600px) {
     .footer__credit-textes p{
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
 }
 @media (min-width: 800px) {
