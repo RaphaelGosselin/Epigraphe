@@ -21,6 +21,7 @@ footer {
     margin-right: 30px;
     max-width: 100rem;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 .footer__nav ul{
  display:flex;
@@ -29,6 +30,7 @@ footer {
  list-style: none;
  max-width: 100rem;
  margin: 0 auto;
+ padding-top: 20px;
 }
 a {
     color: var(--color-border);
