@@ -158,12 +158,12 @@ main p{
 }
 @media (min-width: 600px) {
     .footer__credit-textes p{
-        font-size: 0.9rem;
+        font-size: 1.4rem;
     }
 }
 @media (min-width: 800px) {
     .footer__credit-textes p{
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 }
 @media (min-width: 600px) {
