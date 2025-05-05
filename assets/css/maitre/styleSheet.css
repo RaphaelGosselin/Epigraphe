@@ -12,28 +12,3 @@
 /** Galerie **/
 @import url(../page_CSS/galerie.css);
 /* main */
-.personnage__figure {
-    margin: 0;
-    text-align: center;
-}
-.personnage__figure img {
-    max-width: 400px;
-}
-@media(min-width:700px){
-main {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-.image_personnage {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.personnage__figure {
-    max-width: calc(100%/3);
-    margin: 0;
-}
-.personnage__figure img {
-    max-width: 330px;
-}
-}
