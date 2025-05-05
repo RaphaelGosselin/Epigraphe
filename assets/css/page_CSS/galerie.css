@@ -1,19 +1,23 @@
 .image_personnage{
     display: flex;
     flex-direction: column;
- margin-left:15%;
- margin-right:15% ;
- border-radius: 10px;
- 
+
+   border-radius: 10px;
+   border-color: #A64E20;
+
 
 }
-
+.personnage_img{
+    border-radius: 10px;
+    border-color: #A64E20;
+}
 
 .personnage_img figcaption{
     position: absolute;
     top: 5%;
     text-align: center;
     width: 100%;
+   
 
 }
 
