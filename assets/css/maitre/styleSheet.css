@@ -7,6 +7,10 @@
 @import url(../normalize_typo_utilitaires/utilitaires.css);
 /** Accueil CSS**/
 @import url(../page_CSS/accueil.css);
+/** Chasse **/
+@import url(../page_CSS/chasse.css);
+/** Galerie **/
+@import url(../page_CSS/galerie.css);
 /* main */
 .personnage__figure {
     margin: 0;
