@@ -9,7 +9,7 @@
 }
 .personnage_img{
   
-    border: 10px solid #A64E20;
+    border: 10px solid var("#A64E20");
 }
 
 .personnage_img figcaption{
