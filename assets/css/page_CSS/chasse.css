@@ -1,0 +1,65 @@
+.center-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.enigme {
+    position: relative;
+    display: inline-block;
+    color: var(--color-texte); /* Text color */
+    width: 36rem; /* Fixed width */
+    height: 12rem; /* Fixed height */
+    line-height: 12rem; /* Center text vertically */
+    text-align: center; /* Center text horizontally */
+    background-color: var(--color-nav); /* Square color */
+}
+@media(min-width:700px){
+    .enigme{
+        width: 70rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media(min-width:1000px){
+    .enigme {
+        width: 100rem;
+    }
+}
+.enigme_boites {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    color: var(--color-texte); /* Text color */
+    width: 36rem; /* Fixed width */
+    height: 30rem; /* Fixed height */
+    line-height: 30rem; /* Center text vertically */
+    text-align: center; /* Center text horizontally */
+    background-color: var(--color-nav); /* Square color */
+}
+@media(min-width:700px){
+    .enigme_boites{
+        width: 23rem;
+    }
+}
+@media(min-width:1000px){
+    .enigme_boites {
+        width: 33.03rem;
+    }
+}
+.btn_piger {
+    width: 36rem;
+    margin: 1rem 0rem;
+}
+@media(min-width:700px){
+    .btn_piger{
+        width: 70rem;
+    }
+}
+@media(min-width:1000px){
+    .btn_piger{
+        width: 100rem;
+    }
+}
