@@ -1,7 +1,10 @@
 .image_personnage{
     display: flex;
     flex-direction: column;
- margin-left: 0%;
+ margin-left:15%;
+ margin-right:15% ;
+ border-radius: 10px;
+ 
 
 }
 
