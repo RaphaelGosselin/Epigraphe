@@ -1,13 +1,14 @@
 .image_personnage{
     display: flex;
     flex-direction: column;
+    align-self: center;
 
 
 
 
 }
 .personnage_img{
-    border-radius: 10px;
+  
     border: 10px solid #A64E20;
 }
 
