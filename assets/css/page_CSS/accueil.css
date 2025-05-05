@@ -303,9 +303,9 @@ a {
   text-align: center;
   color: #4c2e1a;
 }
-.btn-chasse {
+.btn_chasse {
   padding:10px;
-  margin: 20px;
+  margin:0;
 }
 .btn-accueil {
   text-align: center;
