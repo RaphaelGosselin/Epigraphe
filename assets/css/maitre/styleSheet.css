@@ -13,3 +13,10 @@
 /** Galerie **/
 @import url(../page_CSS/galerie.css);
 /* main */
+
+@media(min-width:700px){
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
