@@ -2,14 +2,13 @@
     display: flex;
     flex-direction: column;
 
-   border-radius: 10px;
-   border-color: #A64E20;
+
 
 
 }
 .personnage_img{
     border-radius: 10px;
-    border-color: #A64E20;
+    border: 10px solid #A64E20;
 }
 
 .personnage_img figcaption{
