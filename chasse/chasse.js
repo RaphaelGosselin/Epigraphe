@@ -3,7 +3,6 @@ const arrIdsPersonnagesAPiger = new Array("e0001", "e0008", "e0015", "e0019");
 const arrIdsObjetsAPiger = new Array("e0002", "e0004", "e0007", "e0021");
 const arrIdsLieuxAPiger = new Array("e0005", "e0012", "e0016", "e0022");
 
-
 //*************************
 // Écouteurs d'événements 
 //*************************
@@ -23,13 +22,12 @@ window.addEventListener("load", initialiser);
             const strIdLieu = localStorage.getItem("id_lieu");
     
             // Mettre à jour les indices dans l'interface
-            
-                document.getElementById("personnageSegment").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.INDICE;
-                document.getElementById("objetSegment").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.INDICE; 
-                document.getElementById("lieuSegment").innerHTML=objJSONepigraphes[strIdLieu].CHASSE.INDICE;
-                document.getElementById("personnageIndice").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.INDICE;
-                document.getElementById("objetIndice").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.INDICE;
-                document.getElementById("lieuIndice").innerHTML=objJSONepigraphes[strIdLieu].CHASSE.INDICE;
+            document.getElementById("personnageSegment").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.INDICE;
+            document.getElementById("objetSegment").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.INDICE; 
+            document.getElementById("lieuSegment").innerHTML=objJSONepigraphes[strIdLieu].CHASSE.INDICE;
+            document.getElementById("personnageIndice").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.INDICE;
+            document.getElementById("objetIndice").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.INDICE;
+            document.getElementById("lieuIndice").innerHTML=objJSONepigraphes[strIdLieu].CHASSE.INDICE;
             // Mettre à jour l'état de la chasse
             document.getElementById("messageEtatChasse").innerHTML = "Chasse en cours";
             document.getElementById("zoneEnigme").removeAttribute("hidden");
