@@ -13,7 +13,7 @@
   <header>
     <div class="header_container">
       <div class="header__img">
-      <img src="/assets/images/logo_finale.png" alt="Logo Chasse aux épigraphes" class="header__logo"> 
+      <img src="../assets/images/logo_finale.png" alt="Logo Chasse aux épigraphes" class="header__logo"> 
       </div>
         <nav class="header__nav">
           <ul class="nav__list">
@@ -36,12 +36,14 @@
             <h2>Nom du personnage</h2>
         </div>
         <div class="biographie">
-            <picture>
-                <source media="(min-width: 650px)" srcset="../images/economie-et-politique.jpg">
-                <source media="(min-width: 465px)" srcset="../images/economie-et-politique.jpg">
-                <img src="../images/economie-et-politique.jpg" alt="Economie et Politique" style="width:auto;">
-            </picture>
-            <p id="titre_image"></p>
+ 
+          <figure>
+            <img src="../assets/images/imageOptimisees/402/e0001.png" alt=" " id="url_image">
+              <figcaption>
+                 <span id="titre_image">Edmund Alleyn dans son atelier</span> <br>
+                 ©<span id="credit_image">Gabor Szilasi</span>
+              </figcaption>
+            </figure>
             <h3>notes biographie</h3>
             <p>Edmund Alleyn est né à Québec en 1931. Il est un artiste peintre. Edmund Alleyn a étudié à l'école des beaux-arts de Québec, auprès de Jean-Paul Lemieux et Jean Dallaire. Il séjourne en France de 1955 à 1970. De retour au Québec, Alleyn est frappé par le changement que les années ont opéré sur son pays et le devenir socio-politique du territoire entre dans ses préoccupations artistiques. Parallèlement, il obtient un poste de professeur au département d'arts visuels de l'Université d'Ottawa, où il enseignera durant plus de 15 ans. Aujourd’hui, les oeuvres de Alleyn sont exposés régulièrement dans les Musées et les galeries, tant au Québec qu'en Ontario, et à New York. 
              </p>
@@ -79,24 +81,32 @@
 
         </div>
         <hr>
-        <div class="soumettre_indice">
-            <h3>soumettre un indice</h3>
-            <fieldset class="type_indice">
-                <label for="type_indice">Type d'indice :</label>
-           
-                    <option value="personnage">Personnage</option>
-                    <option value="lieux">Lieux</option>
-                    <option value="objet">Objet</option>
-                
+        <form>
           
-
-            </fieldset>
-
-                <input type="submit" value="Soumettre">
-
-           <p>Aller à <a href="../galerie/index.html">«Chasse aux épigraphes»</a> pour vérifier votre progression</p>
-
-        </div>
+              <legend>
+                  <h2>Soumettre cette fiche comme élément trouvé <span id="progressionChasse">(0 indice trouvé sur 3)</span></h2>
+              </legend>
+              <ul>
+                  <li>
+                      <input type="radio" name="formChasse" value="personnage" id="personnage" class="screen-reader-only"
+                          required>
+                      <label for="personnage">Personnage</label>
+                  </li>
+                  <li>
+                      <input type="radio" name="formChasse" value="lieu" id="lieu" class="screen-reader-only">
+                      <label for="lieu">Lieu</label>
+                  </li>
+                  <li>
+                      <input type="radio" name="formChasse" value="objet" id="objet" class="screen-reader-only">
+                      <label for="objet">Objet</label>
+                  </li>
+              </ul>
+          
+          <p id="message"></p>
+          <p>
+              <button id="btnSoumettre">Soumettre</button>
+          </p>
+      </form>
         <hr>
     </main>
     <footer>
