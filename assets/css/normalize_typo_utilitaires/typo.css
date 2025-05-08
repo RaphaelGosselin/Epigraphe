@@ -152,7 +152,9 @@ main p{
   
     font-family: abril fatface, sans-serif;
     margin-bottom: 2rem;
+    margin-left: 2rem;
 }
+
 .footer__credit-textes, p{
     font-family: "Crimson Text", serif;
 }
@@ -166,11 +168,7 @@ main p{
         font-size: 1.9rem;
     }
 }
-@media (min-width: 600px) {
-    main p{
-        font-size: 0.9rem;
-    }
-}
+
 @media (min-width: 800px) {
     main p{
         font-size: 1.3rem;
