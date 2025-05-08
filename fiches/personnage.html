@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="/assets/css/maitre/styleSheet.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
     <script src="/assets/js/menu.js" defer></script>
-    <script src ="/assets/js/fiche.js"></script>
-    <script src="../assets/js/epigraphes.js"></script>
+    <script src ="/fiches/fiche.js"></script>
+    <script defer src="/assets/js/epigraphes.js"></script>
     <meta auteur="mathieu_gregoire">
  </head>
  <body>
@@ -37,7 +37,7 @@
         <section>
  
             <figure>
-              <img src="../assets/images/imageOptimisees/402/e0001.png" id="url_image" alt="">
+              <img src="/assets/images/imageOptimisees/402/e0001.png" id="url_image" alt="">
                <figcaption>
                  <span id="titre_image">Edmund Alleyn dans son atelier</span> <br>
                  ©<span id="credit_image">Gabor Szilasi</span>
@@ -61,7 +61,7 @@
         <div class="epigraphe">
           <h2>Plaque commémorative</h2>
           <figure>
-            <img src="../images/plaque_alleyn.png" alt="Épigraphe de Edmund Alleyn" id="url_plaque">
+            <img src="/assets/images/epigraphes/e0001.png" alt="Épigraphe de Edmund Alleyn" id="url_plaque">
             <figcaption id="transcript">Ici vécut Edmund Alleyn(1931-2004). Peintre et artiste polyvalent, créateur
                 d'une oeuvre originale et en constante mutation.
             </figcaption>
@@ -78,12 +78,12 @@
                <h3>Adresse:
                   <span id="adresse">85, rue Wilfrid-Laurier</span>
                </h3>
-                <img id="carteZoom" src="../assets/images/imageOptimisees/image_zoomGoogle_maps/e0001-maps.png" alt="image_zoomGoogle_maps">
+                <img id="carteZoom" src="/assets/images/imageOptimisees/image_zoomGoogle_maps/e0001-maps.png" alt="image_zoomGoogle_maps">
         </div>
         <div class="capsule_sonore">
             <p id="audio_desc"><p>
-            <audio controls id="audio_url">
-              <source src="http://www.ville.quebec.qc.ca/sons/epigraphes/epigraphes_alleyn.mp3" type="audio/mpeg"/>
+            <audio controls>
+              <source src="/assets/audio/e0001.mp3" id="audio_url" type="audio/mpeg"/>
            
             </audio>
             <div class="sous-titre">
