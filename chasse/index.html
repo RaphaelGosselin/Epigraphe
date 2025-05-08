@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/assets/css/maitre/styleSheet.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
     <script src="/assets/js/menu.js" defer></script>
+    <script src="/chasse/chasse.js"></script>
+    <script src="/assets/js/epigraphes.js"></script>
   </head>
   <body>
     <header>
@@ -50,13 +52,23 @@
           <h2>Tableau du jeu de chasse aux épigraphes</h2>
           <div class="content__piger_chasse">
             <div class="content__piger_chasse_liste">
-              <span class="enigme_boites">Personnage</span>
-              <span class="enigme_boites">Objet</span>
-              <span class="enigme_boites">Lieu</span>
+              <span class="enigme_boites personnageIndice">Personnage</span>
+              <span class="enigme_boites objetIndice">Objet</span>
+              <span class="enigme_boites lieuIndice">Lieu</span>
             </div>
-            <span class="enigme">Hint</span>
+            <p id="zoneEnigme" hidden>
+              <span id="personnageSegment">Un artiste peintre avant-gardiste</span>
+              <span id="objetSegment"> a lu le roman «Les Anciens canadiens» </span>
+              <span id="lieuSegment"> à la maison Kerhulu.</span>
+          </p>
           </div>
-          <button class="btn_chasse btn_piger" type="button">piger une chasse</button>
+          <div id="zoneMessageChasseCompletee" hidden>
+            <h2 id="messageChasseCompletee">Bravo! Votre avez complété la chasse!</h2>
+            <button type="button" id="btnConcours">Participer au concours</button>
+        </div>
+
+        <a id="lienChercherIndices" href="../carte/index.html" hidden>Chercher des indices</a>
+          <button class="btn_chasse btn_piger" type="button">Piger une chasse</button>
         </div>
       </section>
     </main>
