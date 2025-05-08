@@ -42,12 +42,12 @@ document.getElementById("btnSoumettre").addEventListener("click", validerPieceCo
 //*************************
 // Fonctions 
 //*************************
+
+
+function initialiser() {
  let intIdFicheCourante = obtenirValeurUrlParam('id');
         console.log(intIdFicheCourante);
         console.log(objJSONepigraphes[intIdFicheCourante]);
-
-function initialiser() {
-
         prenom.innerHTML=objJSONepigraphes[intIdFicheCourante].PRENOM;
         nom.innerHTML=objJSONepigraphes[intIdFicheCourante].NOM;
         lienImage.src = "/images/" + intIdFicheCourante + ".jpg";

@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="/assets/css/maitre/styleSheet.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
     <script src="/assets/js/menu.js" defer></script>
-    <script src="/chasse/chasse.js"></script>
-    <script src="/assets/js/epigraphes.js"></script>
+    <script src="/chasse/chasse.js" defer ></script>
+    <script src="/assets/js/epigraphes.js" defer ></script>
+    <script src="/assets/js/fiche.js" defer></script>
   </head>
   <body>
     <header>
@@ -52,10 +53,11 @@
           <h2>Tableau du jeu de chasse aux épigraphes</h2>
           <div class="content__piger_chasse">
             <div class="content__piger_chasse_liste">
-              <span class="enigme_boites personnageIndice">Personnage</span>
-              <span class="enigme_boites objetIndice">Objet</span>
-              <span class="enigme_boites lieuIndice">Lieu</span>
+              <span id="personnageIndice"class="enigme_boites ">Personnage</span>
+              <span id="objetIndice"class="enigme_boites ">Objet</span>
+              <span id="lieuIndice"class="enigme_boites ">Lieu</span>
             </div>
+            <p id="messageEtatChasse">Aucune chasse en cours</p>
             <p id="zoneEnigme" hidden>
               <span id="personnageSegment">Un artiste peintre avant-gardiste</span>
               <span id="objetSegment"> a lu le roman «Les Anciens canadiens» </span>
@@ -68,7 +70,8 @@
         </div>
 
         <a id="lienChercherIndices" href="../carte/index.html" hidden>Chercher des indices</a>
-          <button class="btn_chasse btn_piger" type="button">Piger une chasse</button>
+        <button type="button" id="btnDemarrerNouvelleChasse" hidden>Voulez-vous démarrer une nouvelle chasse?</button>
+          <button id="btnDebuterChasse"class="btn_chasse type="button">Piger une chasse</button>
         </div>
       </section>
     </main>
