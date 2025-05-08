@@ -39,7 +39,7 @@ function obtenirValeurUrlParam(strParam) {
 // Écouteurs d'événements 
 //*************************
 window.addEventListener("load", initialiser); //La partie 1 se charge avant de commencer autre chose
-document.getElementById("btnSoumettre").addEventListener("click", validerPieceConviction);
+document.getElementById("btnSoumettre").addEventListener('click', validerPieceConviction);
 
 //*************************
 // Fonctions 
