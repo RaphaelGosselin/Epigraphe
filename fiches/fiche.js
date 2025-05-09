@@ -12,84 +12,161 @@ function obtenirValeurUrlParam(strParam) {
 
 
 /* Variables globales */
-        const prenom=document.getElementById('prenom');
-        const nom=document.getElementById('nom');
-        const lienImage=document.getElementById('url_image');
-        const titreImage=document.getElementById('titre_image');
-        const creditImage=document.getElementById('credit_image');
-        const noteBiographique=document.getElementById('notes_biographiques');
-        const maps = document.getElementById('carteZoom');
-        const arrondissement =document.getElementById('arrondissement');
-        const quartier=document.getElementById('quartier');
-        const adresse=document.getElementById('adresse');
-        const lienPlaque=document.getElementById('url_plaque');
-        const transcriptPlaque=document.getElementById('transcript');
-        const lienAudio=document.getElementById('audio_url');
-        const resumeAudio=document.getElementById('audio_preambule');
-        const transcriptAudio=document.getElementById('audio_transcription');
-        const creditAudio=document.getElementById('audio_credit');
-        const domaine=document.querySelector('section h1 + p');
-        const params = new URLSearchParams(window.location.search);
-        const id = params.get('id');
-        if (id) {
-            localStorage.setItem(id, 'visite');
-        }
-        
+
+
+
 //*************************
 // Écouteurs d'événements 
 //*************************
 window.addEventListener("load", initialiser); //La partie 1 se charge avant de commencer autre chose
-document.getElementById("btnSoumettre").addEventListener('click', validerPieceConviction);
+document.getElementById("btnSoumettre").addEventListener("click", validerPieceConviction);
 
 //*************************
 // Fonctions 
 //*************************
- const intIdFicheCourante = obtenirValeurUrlParam('id');
-        console.log(intIdFicheCourante);
-        console.log(objJSONepigraphes[intIdFicheCourante]);
 
 function initialiser() {
+    //Insérer ici la partie 1 faite au dernier cours qui permet d'aller chercher les données dans le JSON
+    let intIdFicheCourante = obtenirValeurUrlParam('id');
+    localStorage.setItem(`${intIdFicheCourante}`, 'clicked');//Quand utilisateur  clique sur le lien ajoute l'id avec la valeur clicked
+    console.log(intIdFicheCourante);
+    //PRENOM
+    document.querySelector("#prenom").innerHTML = objJSONepigraphes[intIdFicheCourante].PRENOM;
+    //NOM
+    document.querySelector("#nom").innerHTML = objJSONepigraphes[intIdFicheCourante].NOM;
+    //IMAGE
+    document.querySelector("#url_image").src = `../assets/images/imageOptimisees/402/${intIdFicheCourante}.png`;
+    //TITRE
+    document.querySelector("#titre_image").innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.TITRE;
+    //CREDIT
+    document.querySelector("#credit_image").innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.CREDIT;
+    //NOTES BIOGRAPHIQUES
+    document.querySelector("#notes_biographiques").innerHTML = objJSONepigraphes[intIdFicheCourante].BIOGRAPHIE;
+    //ARRONDISSEMENT
+    document.querySelector("#arrondissement").innerHTML = objJSONepigraphes[intIdFicheCourante].ARRONDISSEMENT;
+    //CARTE ZOOM
+    document.querySelector("#carteZoom").src = `../assets/images/imageOptimisees/image_zoomGoogle_maps/${intIdFicheCourante}-maps.png`;
+    //QUARTIER
+    document.querySelector("#quartier").innerHTML = objJSONepigraphes[intIdFicheCourante].QUARTIER;
+    //ADRESSE
+    document.querySelector("#adresse").innerHTML = objJSONepigraphes[intIdFicheCourante].ADRESSE;
+    //PLAQUE
+    document.querySelector("#url_plaque").src = `../assets/images/epigraphes/${intIdFicheCourante}.png`;
+    //URL PLAQUE
+    document.querySelector("#url_plaque").setAttribute("alt", objJSONepigraphes[intIdFicheCourante].SUFFIXE_IMAGES);
+    //TRANSCRIPT
+    document.querySelector("#transcript").innerHTML = objJSONepigraphes[intIdFicheCourante].PLAQUE_TRANSCRIPTION;
+    //PLAQUE COMMEMORATIVE
+    //AUDIO DESCRIPTIONs
+    document.querySelector("#audio_desc").innerHTML = objJSONepigraphes[intIdFicheCourante].PLAQUE_TRANSCRIPTION;
+    document.querySelector("#audio_url").src = objJSONepigraphes[intIdFicheCourante].AUDIO.URL;
+    document.querySelector("#audio_url").load();
+    //PREAMBULE
+    document.querySelector("#audio_preambule").innerHTML = objJSONepigraphes[intIdFicheCourante].AUDIO.DESCRIPTION;
+    //TRANSCRIPTION
+    document.querySelector("#audio_transcription").innerHTML = objJSONepigraphes[intIdFicheCourante].AUDIO.TRANSCRIPTION;
+    //CREDIT
+    document.querySelector("#audio_transcription").innerHTML = objJSONepigraphes[intIdFicheCourante].AUDIO.CREDIT;
+}
 
-        prenom.innerHTML=objJSONepigraphes[intIdFicheCourante].PRENOM;
-        nom.innerHTML=objJSONepigraphes[intIdFicheCourante].NOM;
-        lienImage.src = "/images/" + intIdFicheCourante + ".jpg";
-        titreImage.innerHTML=objJSONepigraphes[intIdFicheCourante].IMAGE.TITRE;
-        creditImage.innerHTML=objJSONepigraphes[intIdFicheCourante].IMAGE.CREDIT;
-        noteBiographique.innerHTML=objJSONepigraphes[intIdFicheCourante].BIOGRAPHIE;
-        maps.src="/images/" + intIdFicheCourante +".png";
-        arrondissement.innerHTML=objJSONepigraphes[intIdFicheCourante].ARRONDISSEMENT;
-        quartier.innerHTML=objJSONepigraphes[intIdFicheCourante].QUARTIER;
-        adresse.innerHTML=objJSONepigraphes[intIdFicheCourante].ADRESSE;
-        lienPlaque.src = "/images/plaques/" + intIdFicheCourante  +".jpg";
-        transcriptPlaque.innerHTML=objJSONepigraphes[intIdFicheCourante].PLAQUE_TRANSCRIPTION;
-        lienAudio.src="/sonore/" + intIdFicheCourante +".mp3";
-        resumeAudio.innerHTML=objJSONepigraphes[intIdFicheCourante].AUDIO.DESCRIPTION;
-        transcriptAudio.innerHTML=objJSONepigraphes[intIdFicheCourante].AUDIO.TRANSCRIPTION;
-        creditAudio.innerHTML=objJSONepigraphes[intIdFicheCourante].AUDIO.CREDIT;
-        domaine.innerHTML=objJSONepigraphes[intIdFicheCourante].DOMAINE;
-        document.title = objJSONepigraphes[intIdFicheCourante].PRENOM + " " + objJSONepigraphes[intIdFicheCourante].NOM 
-        
-    }
+
+function validerPieceConviction() {
+    console.log("la fonction validerPieceConviction est appelée!");
+    const refRadioCoche = document.querySelector('[name="formChasse"]:checked');
+
+    const refMessage = document.getElementById('message');//Ref du message pour donner notre rétroaction à l'utilisateur s'il a ou non la bonne réponse!
+    const localStoragePersonnage = localStorage.getItem("id_personnage");
+    const localStorageObjet = localStorage.getItem("id_objet");
+    const localStorageLieu = localStorage.getItem("id_lieu");
 
 
-    function validerPieceConviction() {
-        const refRadioCoche = document.querySelector('[name="formChasse"]:checked');
-        const refMessage = document.getElementById('message');
-    
-        if (refRadioCoche === null) {
-            refMessage.textContent = "Veuillez choisir un element";
-        } else {
-            console.log(refRadioCoche.value); 
-    
-            if (localStorage.getItem("id_" + refRadioCoche.value) == intIdFicheCourante) {
-                refMessage.textContent = "Bonne réponse!";
-                localStorage.setItem(refRadioCoche.value +"_est_trouve", "true");
+    /*Vérifications à faire:
+        -Je veux comparer ma fiche actuelle en querystring avec la bonne réponse en localStorage
+        -Voir la page 3 de l'énoncé pdf pour savoir les rétroactions à afficher selon les situations!
+        - pour lire dans le localStorage : localStorage.getItem(id_personnage).*/
+    console.log(localStorage.getItem("id_personnage"));
+    console.log(localStorage.getItem("id_objet"));
+    console.log(localStorage.getItem("id_lieu"));
+    console.log(obtenirValeurUrlParam('id'));
 
-            } else {
-                refMessage.textContent = "Mauvaise réponse.";
+// SI aucune chasse est tiré ALORS affiche message d'erreur : aucune chasse en cours
+    if (
+        localStoragePersonnage === "null" &&
+        localStorageObjet === "null" &&
+        localStorageLieu === "null"
+    ) {
+        refMessage.innerHTML =
+            "Aucune chasse en cours. Si vous désirez débuter une chasse, visitez la page «Chasse».";
+    } 
+// SINON chasse en cours
+    else {
+        //Si aucun bouton radio n'est sélectionné : message d'erreur veuillez sélectionner un élément
+        if (!refRadioCoche) {
+            refMessage.innerHTML = "Veuillez sélectionner un élément.";
+            refMessage.style.color = "red";
+        }
+        //SI le bouton radio n'est pas égale à nul : on rentre dans la condition 
+        if (refRadioCoche !== null) {
+            //SI 
+            // - l'id de la querystring est == à celle de personnage dans le local storage 
+            // - ET que la valeur du bouton radio est égale à "personnage"
+            // - ALORS affiche le message de félicitation
+            if (
+                localStoragePersonnage
+                ==
+                obtenirValeurUrlParam('id')
+                &&
+                refRadioCoche.value
+                ==
+                "personnage"
+            ) {
+                refMessage.innerHTML = "Bravo! Vous avez trouvé « texte de l’indice qui provient du fichier json »."
+                refMessage.style.color = "green";
+                localStorage.personnage_est_trouve = true;
             }
-    
-            console.log(localStorage.getItem("id_personnage"));
+            //SI 
+            // - l'id de la querystring est == à celle d'objet dans le local storage 
+            // - ET que la valeur du bouton radio est égale à "objet"
+            // - ALORS affiche le message de félicitation
+            else if (
+                localStorageObjet
+                ==
+                obtenirValeurUrlParam('id')
+                &&
+                refRadioCoche.value
+                ==
+                "objet"
+            ) {
+                refMessage.innerHTML = "Bravo! Vous avez trouvé « texte de l’indice qui provient du fichier json »."
+                refMessage.style.color = "green";
+                localStorage.objet_est_trouve = true;
+            }
+            //SI 
+            // - l'id de la querystring est == à celle d'lieu dans le local storage 
+            // - ET que la valeur du bouton radio est égale à "lieu"
+            // - ALORS affiche le message de félicitation
+            else if (
+                localStorageLieu
+                ==
+                obtenirValeurUrlParam('id')
+                &&
+                refRadioCoche.value
+                ==
+                "lieu"
+            ) {
+                refMessage.innerHTML = "Bravo! Vous avez trouvé « texte de l’indice qui provient du fichier json »."
+                refMessage.style.color = "green";
+                localStorage.lieu_est_trouve = true;
+            }
+            //SINON affiche le message d'erreur
+            else {
+                refMessage.innerHTML = "Mauvaise Réponse";
+                refMessage.style.color = "red";
+            }
         }
     }
-    
+
+}
+
+
+

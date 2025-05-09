@@ -1,47 +1,55 @@
 <!DOCTYPE html>
-<html lang="fr">
- <head>       <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page personnage</title>
+<html lang="fr-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Edmund Alleyn - Chasse aux épigraphes</title>
     <link rel="stylesheet" href="/assets/css/maitre/styleSheet.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
-    <script src="/assets/js/menu.js" defer></script>
-    <script src ="/fiches/fiche.js"></script>
-    <script defer src="/assets/js/epigraphes.js"></script>
-    <meta auteur="mathieu_gregoire">
- </head>
- <body>
-  <header>
-    <div class="header_container">
-      <div class="header__img">
-      <img src="../assets/images/logo_finale.png" alt="Logo Chasse aux épigraphes" class="header__logo"> 
+    <script defer src="../assets/js/menu.js"></script>
+    <script defer src="../assets/js/epigraphes.js"></script>
+    <script defer src="fiche.js"></script>
+  </head>
+<body>
+    <noscript>
+        <p>Pour apprécier pleinement ce site, votre navigateur doit disposer de JavaScript, ce qui ne semble pas être le cas
+            présentement. Alternativement, vous pouvez consulter le site de la Ville de Québec pour découvrir les épigraphes
+            historiques :
+            <a href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/index.aspx">ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/</a>
+        </p>
+    </noscript>
+    <header>
+      <div class="header_container">
+        <div class="header__img">
+        <img src="/assets/images/logo_finale.png" alt="Logo Chasse aux épigraphes" class="header__logo"> 
+        </div>
+          <nav class="header__nav">
+            <ul class="nav__list">
+              <li class="nav__list-item"><a href="/accueil/index.html" class="nav__link">Accueil</a></li>
+              <li class="nav__list-item"><a href="/chasse/index.html" class="nav__link">Chasse aux épigraphes</a></li>
+              <li class="nav__list-item"><a href="/galerie/index.html" class="nav__link">Galerie de personnages</a></li>
+              <li class="nav__list-item"><a href="/carte/index.html" class="nav__link">Carte</a></li>
+            </ul>
+          </nav>
       </div>
-        <nav class="header__nav">
-          <ul class="nav__list">
-            <li class="nav__list-item"><a href="/accueil/index.html" class="nav__link">Accueil</a></li>
-            <li class="nav__list-item"><a href="/chasse/index.html" class="nav__link">Chasse aux épigraphes</a></li>
-            <li class="nav__list-item"><a href="/galerie/index.html" class="nav__link">Galerie de personnages</a></li>
-            <li class="nav__list-item"><a href="/carte/index.html" class="nav__link">Carte</a></li>
-          </ul>
-        </nav>
-    </div>
-      <div class="title">
-        <h1><span>--</span>Chasse aux épigraphes<span>--</span></h1>
-        <p>Dans la ville de québec</p>
+        <div class="title">
+          <h1><span>--</span>Chasse aux épigraphes<span>--</span></h1>
+          <p>Dans la ville de québec</p>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
     <main>
-        <h2><span id="prenom">Edmund</span><span id="nom">Alleyn</span></h2>
         <section>
- 
+            <h1><span id="prenom">Edmund</span><span id="nom">Alleyn</span></h1>
+            <p>Arts visuels</p>
             <figure>
-              <img src="/assets/images/imageOptimisees/402/e0001.png" id="url_image" alt="">
-               <figcaption>
-                 <span id="titre_image">Edmund Alleyn dans son atelier</span> <br>
-                 ©<span id="credit_image">Gabor Szilasi</span>
-              </figcaption>
+                <img src="../assets/images/imageOptimisees/402/e0001.png" alt="" id="url_image">
+                <figcaption>
+                    <span id="titre_image">Edmund Alleyn dans son atelier</span> <br>
+                    ©<span id="credit_image">Gabor Szilasi</span>
+                </figcaption>
             </figure>
             <h2>Notes biographiques</h2>
             <div id="notes_biographiques">
@@ -49,79 +57,110 @@
                     Edmund Alleyn est né à Québec en 1931. Il est un artiste peintre. Edmund Alleyn a étudié à l'école des
                     beaux-arts de Québec, auprès de Jean-Paul Lemieux et Jean Dallaire. Il séjourne en France de 1955 à
                     1970.
+                </p>
+                <p>
                     De retour au Québec, Alleyn est frappé par le changement que les années ont opéré sur son pays et le
                     devenir sociopolitique du territoire entre dans ses préoccupations artistiques. Parallèlement, il
                     obtient un poste de professeur au département d'arts visuels de l'Université d'Ottawa, où il enseignera
-                    durant plus de 15 ans.
+                    durant plus
+                    de 15 ans.
+                </p>
+                <p>
                     Aujourd’hui, Alleyn expose régulièrement dans les Musées et les galeries, tant au Québec qu'en Ontario,
                     et à New York.
                 </p>
             </div>
         </section>
-        <div class="epigraphe">
-          <h2>Plaque commémorative</h2>
-          <figure>
-            <img src="/assets/images/epigraphes/e0001.png" alt="Épigraphe de Edmund Alleyn" id="url_plaque">
-            <figcaption id="transcript">Ici vécut Edmund Alleyn(1931-2004). Peintre et artiste polyvalent, créateur
-                d'une oeuvre originale et en constante mutation.
-            </figcaption>
-          </figure>
-        </div>
-        <div class="localisation" class="sous-titre">
-            <h1>localisation</h1>
-               <h3>Arrondissement:
-                  <span id="arrondissement">La Cité-Limoilou</span>
-               </h3>
-               <h3>Quartier:
-                  <span id="quartier">Vieux-Québec/Cap-Blanc/Colline parlementaire</span>
-               </h3>
-               <h3>Adresse:
-                  <span id="adresse">85, rue Wilfrid-Laurier</span>
-               </h3>
-                <img id="carteZoom" src="/assets/images/imageOptimisees/image_zoomGoogle_maps/e0001-maps.png" alt="image_zoomGoogle_maps">
-        </div>
-        <div class="capsule_sonore">
-            <p id="audio_desc"><p>
-            <audio controls>
-              <source src="/assets/audio/e0001.mp3" id="audio_url" type="audio/mpeg"/>
-           
+        <section>
+            <h2>Localisation</h2>
+            <figure>
+                <img src="../assets/images/imageOptimisees/image_zoomGoogle_maps/e0001-maps.png" alt="Plan rapproché de l'emplacement sur la carte géographique"
+                    id="carteZoom">
+                <figcaption>
+                    <h3>Arrondissement:
+                        <span id="arrondissement">La Cité-Limoilou</span>
+                    </h3>
+                    <h3>Quartier:
+                        <span id="quartier">Vieux-Québec/Cap-Blanc/Colline parlementaire</span>
+                    </h3>
+                    <h3>Adresse:
+                        <span id="adresse">85, rue Wilfrid-Laurier</span>
+                    </h3>
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Plaque commémorative</h2>
+            <figure>
+                <img src="../assets/images/epigraphes/e0001.png" alt="Épigraphe de Edmund Alleyn" id="url_plaque">
+                <figcaption id="transcript">Ici vécut Edmund Alleyn(1931-2004). Peintre et artiste polyvalent, créateur
+                    d'une oeuvre originale et en constante mutation.
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Capsule sonore</h2>
+            <p id="audio_desc"></p>
+            <audio controls id="audio_url">
+                <source src="http://www.ville.quebec.qc.ca/sons/epigraphes/epigraphes_alleyn.mp3" type="audio/mpeg"/>
+                Votre navigateur ne propose pas de lecteur audio.
+                Consultez la transcription textuelle qui suit.
             </audio>
-            <div class="sous-titre">
-              <p id="audio_preambule">Tout jeune, le peintre Edmund Alleyn vivait près du fleuve. L’eau, la lumière, les voyages ont nourri son imagination. Esprit libre, il explorait toutes les formes d’expression. Allons à la rencontre de cet artiste qui était en avance sur son temps.</p>
-              <p id="audio_transcription">Mon père est né en 1931 à Québec de parents moitié irlandais, moitié anglais donc vraiment la souche anglophone du Québec...</p>
-              <h3>Crédits de la narration</h3>
-              <p id="audio_credit">Jennifer Alleyn est cinéaste. Elle s’investit dans la transmission de
+            <h3>Transcription textuelle</h3>
+            <p id="audio_preambule">Tout jeune, le peintre Edmund Alleyn vivait près du fleuve. L’eau, la lumière, les voyages ont nourri son imagination. Esprit libre, il explorait toutes les formes d’expression. Allons à la rencontre de cet artiste qui était en avance sur son temps.</p>
+            <p id="audio_transcription">Mon père est né en 1931 à Québec de parents moitié irlandais, moitié anglais donc vraiment la souche anglophone du Québec...</p>
+            <h3>Crédits de la narration</h3>
+            <p id="audio_credit">Jennifer Alleyn est cinéaste. Elle s’investit dans la transmission de
                 l’œuvre de son père, entre autres par la publication d’un site Internet et la réalisation de
                 documentaires.</p>
-            </div>
-        </div>
-        <hr>
-        <form>
-          
-              <legend>
-                  <h2>Soumettre cette fiche comme élément trouvé <span id="progressionChasse">(0 indice trouvé sur 3)</span></h2>
-              </legend>
-               <ul>
-                  <li>
-                      <input type="radio" name="formChasse" value="personnage" id="personnage" class="screen-reader-only" required>
-                      <label for="personnage">Personnage</label>
-                  </li>
-                  <li>
-                      <input type="radio" name="formChasse" value="lieu" id="lieu" class="screen-reader-only">
-                      <label for="lieu">Lieu</label>
-                  </li>
-                  <li>
-                      <input type="radio" name="formChasse" value="objet" id="objet" class="screen-reader-only">
-                      <label for="objet">Objet</label>
-                  </li>
-               </ul>
-               <button id="btnSoumettre">Soumettre</button>
-          
-              <p>Aller à <a href="../chasse/index.html">«Chasse aux épigraphes»</a> pour vérifier votre progression</p>
-       </form>
-        <hr>
-        <p id="message"></p>
+        </section>
     </main>
+    <aside role="complementary">
+        <!-- Si l’utilisateur n’a pas débuté une chasse -->
+        <div id="zoneAucuneChasseEnCours" hidden>
+            <h2>Soumettre cette fiche comme pièce à conviction</h2>
+            <p><span id="statusChasse">Aucune chasse en cours. Si vous désirez débuter une chasse, visitez la page <a
+                    href="../chasse/index.html">Chasse</a>.</span></p>
+        </div>
+
+        <!-- Si une chasse est en cours -->
+        <div id="zoneChasseEnCours">
+            <form>
+                <fieldset>
+                    <legend>
+                        <h2>Soumettre cette fiche comme élément trouvé <span id="progressionChasse">(0 indice trouvé sur 3)</span></h2>
+                    </legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="formChasse" value="personnage" id="personnage" class="screen-reader-only"
+                                required>
+                            <label for="personnage">Personnage</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="formChasse" value="lieu" id="lieu" class="screen-reader-only">
+                            <label for="lieu">Lieu</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="formChasse" value="objet" id="objet" class="screen-reader-only">
+                            <label for="objet">Objet</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p id="message"></p>
+                <p>
+                    <button id="btnSoumettre" type="button">Soumettre</button>
+                </p>
+            </form>
+            <ul>
+                <li>
+                    <a href="../chasse/index.html">Vérifier votre progression de la chasse</a>
+                </li>
+                <li>
+                    <a href="../carte/index.html">Poursuivre la chasse </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
     <footer>
       <nav class="footer__nav">
           <ul class="footer__ul">
@@ -148,6 +187,7 @@
               Une réalisation de Ariane Bouthillette, Raphael Gosselin et Mathieu Grégoire © Tous droits réservés 2025. Travail scolaire réalisé dans le cadre du programme Techniques d’intégration multimédia. Cégep de Sainte-Foy 
           </p>
         </div>
-  </footer>
-    </body>
+    </footer>
     
+</body>
+</html>
