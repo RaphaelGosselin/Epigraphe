@@ -35,7 +35,9 @@ function initialiser() {
     //NOM
     document.querySelector("#nom").innerHTML = objJSONepigraphes[intIdFicheCourante].NOM;
     //IMAGE
-    document.querySelector("#url_image").src = `../assets/images/imageOptimisees/402/${intIdFicheCourante}.png`;
+    document.querySelector("#url_image").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/402/${intIdFicheCourante}.png">
+                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/242/${intIdFicheCourante}.png">
+                                                <img src="../assets/images/imageOptimisees/402/${intIdFicheCourante}.png" alt="Flowers" style="width:auto;"></img>`;                                             
     //TITRE
     document.querySelector("#titre_image").innerHTML = objJSONepigraphes[intIdFicheCourante].IMAGE.TITRE;
     //CREDIT
