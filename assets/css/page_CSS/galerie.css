@@ -17,8 +17,8 @@
     top: 5%;
     text-align: center;
     width: 100%;
+    
    
-
 }
 
 
@@ -42,8 +42,9 @@
 
 @media (min-width:800px) {
   .personnage_figure {
-    width: 31.3333%;
+    width: 31.3334%;
     margin: calc(100%/3 + 1vw);
+    justify-self: center;
   }
 
 }
