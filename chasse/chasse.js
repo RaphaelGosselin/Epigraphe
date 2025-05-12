@@ -46,17 +46,14 @@ function initialiser(){
     //Condition pour savoir si c'est trouvé
     //Si true change pour trouvé
     if(localStorage.personnage_est_trouve === "true"){
-        document.querySelector("#personnageMessageTrouve").removeAttribute("hidden");
         document.getElementById("personnageIndice").innerHTML = objJSONepigraphes[strIdPersonnage].PRENOM + " " + objJSONepigraphes[strIdPersonnage].NOM; 
     }
     //Si true change pour trouvé
     if(localStorage.objet_est_trouve === "true"){
-        document.querySelector("#objetMessageTrouve").removeAttribute("hidden");
         document.getElementById("objetIndice").innerHTML = objJSONepigraphes[strIdObjet].PRENOM + " " + objJSONepigraphes[strIdObjet].NOM;
     }
     //Si true change pour trouvé
     if(localStorage.lieu_est_trouve === "true"){
-        document.querySelector("#lieuMessageTrouve").removeAttribute("hidden");
         document.getElementById("lieuIndice").innerHTML = objJSONepigraphes[strIdLieux].PRENOM + " " + objJSONepigraphes[strIdLieux].NOM;
     }
     //Si les 3 dans local storage sont a true on active vers la page concourt
