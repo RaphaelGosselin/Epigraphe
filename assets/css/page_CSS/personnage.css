@@ -8,21 +8,7 @@ main{
     background-color: var(--color-page);
     padding: 20px;
 }
-@media (max-width:2000px) and (min-width: 1440px) {
-    main{
-        padding: 220px;
-    }
-}
-@media (max-width:763px) and (min-width: 450px) {
-    main{
-        padding: 20px;
-    }
-}
-@media (max-width:449px) and  (min-width: 320px) {
-    main{
-        padding: 20px;
-    }
-}
+
 .picture_bio {
     width: auto;
     height: auto;
