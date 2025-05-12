@@ -9,7 +9,7 @@
  @media (min-width: 530px) {
     .picture_bio img{
         position: absolute;
-        height: 50;
+        height: 50%;
         height: auto;
     }
 }
