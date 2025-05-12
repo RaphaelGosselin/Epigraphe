@@ -25,9 +25,9 @@ function initialiser(){
     document.getElementById("objetIndice").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.INDICE;
     document.getElementById("lieuIndice").innerHTML = objJSONepigraphes[strIdLieux].CHASSE.INDICE;
     //Affiche les réponses
-    document.querySelector("#personnageSegment").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.REPONSE;
-    document.querySelector("#objetSegment").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.REPONSE;
-    document.querySelector("#lieuSegment").innerHTML = objJSONepigraphes[strIdLieux].CHASSE.REPONSE;
+    document.querySelector("#personnageSegment").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.INDICE;
+    document.querySelector("#objetSegment").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.INDICE;
+    document.querySelector("#lieuSegment").innerHTML = objJSONepigraphes[strIdLieux].CHASSE.INDICE;
     document.querySelector("#zoneEnigme").removeAttribute("hidden");
     //boutons
     document.querySelector("#btnDebuterChasse").setAttribute("disabled", "");

@@ -48,3 +48,8 @@
   }
 
 }
+
+.image_galerie {
+    border:var(--color-border) solid 6px;
+    border-radius: 10px;
+}
