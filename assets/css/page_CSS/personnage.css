@@ -6,7 +6,7 @@ main{
     align-items: center;
     justify-content: center;
     background-color: var(--color-page);
-    padding: 20px;
+    padding-left:20px;
 }
 
 .picture_bio {
@@ -56,12 +56,21 @@ fieldset{
 
     border: 2px solid var(--color-btn);
     border-radius: 10px;
-
+    
     margin: 10px;
+    align-self: center;
     background-color: var(--color-page);
     height: 100%;
 
    
+}
+@media (max-width: 1400px) and (min-width: 1000px) {
+     fieldset{
+        max-width: 800px;
+        height: 100%;
+        align-self: center;
+
+     }
 }
 bouton_soumettre_personnage:hover{
     cursor: pointer;
@@ -99,6 +108,16 @@ li{
 input{
     background-color: var(--color-btn);
     color:var(--color-page);
+}
+
+
+@media(max-width: 1400px) {
+    input, label{
+    font-family:"crimson textes", sans-serif;
+    color: var(--color-btn);
+    font-size: 15px;
+
+}
 }
 input, label{
     font-family:"crimson textes", sans-serif;
