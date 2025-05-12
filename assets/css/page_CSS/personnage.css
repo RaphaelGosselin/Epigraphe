@@ -1,15 +1,29 @@
 
 
-.picture_bio img{
-    width: 100%;
-    height: 100%;
+.picture_bio {
+    width: 90%;
+    height: 90%;
     object-fit: cover;
     border: 10px solid var("#A64E20");
+    
 }
  @media (min-width: 530px) {
     .picture_bio img{
         position: absolute;
-        height: 50%;
-        height: auto;
+      width: 90%;
+      height: 90%;
+     object-fit: cover;
+     border: 10px solid var("#A64E20");
     }
+}
+.epigraphes_personnage{
+      
+      height: auto;
+        width: auto;
+}
+.map_localisation{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 10px solid var("#A64E20");
 }

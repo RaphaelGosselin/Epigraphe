@@ -7,6 +7,7 @@
     <title>Edmund Alleyn - Chasse aux épigraphes</title>
     <link rel="stylesheet" href="/assets/css/maitre/styleSheet.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="../assets/css/page_CSS/personnage.css">
     <script defer src="../assets/js/menu.js"></script>
     <script defer src="../assets/js/epigraphes.js"></script>
     <script defer src="fiche.js"></script>
@@ -45,7 +46,9 @@
             <h1><span id="prenom">Edmund</span><span id="nom">Alleyn</span></h1>
             <p>Arts visuels</p>
             <figure>
-                <picture id="url_image" class="picture_bio"> <img src="../assets/images/imageOptimisees/402/e0001.png" alt="e0001"></picture>
+                <picture id="url_image"> 
+                    <img src="../assets/images/imageOptimisees/402/e0001.png" alt="e0001" class="picture_bio">
+                </picture>
                 <figcaption>
                     <span id="titre_image">Edmund Alleyn dans son atelier</span> <br>
                     ©<span id="credit_image">Gabor Szilasi</span>
@@ -74,7 +77,7 @@
         <section>
             <h2>Localisation</h2>
             <figure>
-                <img src="../assets/images/imageOptimisees/image_zoomGoogle_maps/e0001-maps.png" alt="Plan rapproché de l'emplacement sur la carte géographique"
+                <img class="map_localisation" src="../assets/images/imageOptimisees/image_zoomGoogle_maps/e0001-maps.png" alt="Plan rapproché de l'emplacement sur la carte géographique"
                     id="carteZoom">
                 <figcaption>
                     <h3>Arrondissement:
@@ -92,7 +95,7 @@
         <section>
             <h2>Plaque commémorative</h2>
             <figure>
-                <img src="../assets/images/epigraphes/e0001.png" alt="Épigraphe de Edmund Alleyn" id="url_plaque">
+                <img src="../assets/images/epigraphes/e0001.png" alt="Épigraphe de Edmund Alleyn" id="url_plaque" class="epigraphes_personnage">
                 <figcaption id="transcript">Ici vécut Edmund Alleyn(1931-2004). Peintre et artiste polyvalent, créateur
                     d'une oeuvre originale et en constante mutation.
                 </figcaption>
