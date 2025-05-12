@@ -1,5 +1,12 @@
 
-
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-page);
+    padding: 20px;
+}
 .picture_bio {
     width: 90%;
     height: 90%;
@@ -53,15 +60,14 @@
     justify-content: center;
 }
 fieldset{ 
-    list-style:none;
+
     border: 2px solid var(--color-btn);
     border-radius: 10px;
-    padding: 10px;
+
     margin: 10px;
     background-color: var(--color-page);
     height: 100%;
-   
-    text-align: center;
+
    
 }
 bouton_soumettre_personnage:hover{
@@ -93,4 +99,21 @@ bouton_soumettre_personnage:hover{
         font-size:11px;
         
     }
+}
+li{
+    list-style: none;;
+}
+input{
+    background-color: var(--color-btn);
+    color:var(--color-page);
+}
+input, label{
+    font-family:"crimson textes", sans-serif;
+    color: var(--color-btn);
+    font-size: 15px;
+
+}
+li a{
+    
+    list-style: circle;
 }
