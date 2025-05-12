@@ -20,3 +20,8 @@
         margin: 0 auto;
     }
 }
+
+.contour {
+    border: 10px solid var(--color-border);
+    padding: 1rem;
+}
