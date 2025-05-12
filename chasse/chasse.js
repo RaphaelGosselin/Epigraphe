@@ -24,6 +24,15 @@ function initialiser(){
     document.getElementById("personnageIndice").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.INDICE; 
     document.getElementById("objetIndice").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.INDICE;
     document.getElementById("lieuIndice").innerHTML = objJSONepigraphes[strIdLieux].CHASSE.INDICE;
+    document.getElementById("personnagePicture").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/402/${strIdPersonnage}.png">
+                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/242/${strIdPersonnage}.png">
+                                                <img src="../assets/images/imageOptimisees/242/${strIdPersonnage}.png" alt="Flowers" style="width:auto;"></img>`;
+    document.getElementById("personnageObjet").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/402/${strIdObjet}.png">
+                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/242/${strIdObjet}.png">
+                                                <img src="../assets/images/imageOptimisees/242/${strIdObjet}.png" alt="Flowers" style="width:auto;"></img>`;
+    document.getElementById("personnageLieux").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/402/${strIdLieux}.png">
+                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/242/${strIdLieux}.png">
+                                                <img src="../assets/images/imageOptimisees/242/${strIdLieux}.png" alt="Flowers" style="width:auto;"></img>`;
     //Affiche les réponses
     document.querySelector("#personnageSegment").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.INDICE;
     document.querySelector("#objetSegment").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.INDICE;
@@ -69,8 +78,7 @@ function demarrerChasse() {
     const strIdObjet = arrIdsObjetsAPiger[Math.floor(Math.random()* arrIdsObjetsAPiger.length)];
     const strIdLieux = arrIdsLieuxAPiger[Math.floor(Math.random()* arrIdsLieuxAPiger.length)];
 
-    //syntaxe alternative pour écrire en localStorage:
-    //localStorage.setItem('id_personnage', "e0008"); 
+    //syntaxe alternative pour écrire en localStorage: 
     localStorage.id_personnage = strIdPersonnage;
     localStorage.id_objet = strIdObjet;
     localStorage.id_lieu = strIdLieux;
@@ -88,6 +96,15 @@ function demarrerChasse() {
     document.getElementById("personnageIndice").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.INDICE; 
     document.getElementById("objetIndice").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.INDICE;
     document.getElementById("lieuIndice").innerHTML = objJSONepigraphes[strIdLieux].CHASSE.INDICE;
+    document.getElementById("personnagePicture").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/402/${strIdPersonnage}.png">
+                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/242/${strIdPersonnage}.png">
+                                                <img src="../assets/images/imageOptimisees/242/${strIdPersonnage}.png" alt="Flowers" style="width:auto;"></img>`;
+    document.getElementById("personnageObjet").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/402/${strIdObjet}.png">
+                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/242/${strIdObjet}.png">
+                                                <img src="../assets/images/imageOptimisees/242/${strIdObjet}.png" alt="Flowers" style="width:auto;"></img>`;
+    document.getElementById("personnageLieux").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/402/${strIdLieux}.png">
+                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/242/${strIdLieux}.png">
+                                                <img src="../assets/images/imageOptimisees/242/${strIdLieux}.png" alt="Flowers" style="width:auto;"></img>`;
     //Affiche les réponses
     document.querySelector("#personnageSegment").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.REPONSE;
     document.querySelector("#objetSegment").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.REPONSE;
@@ -97,7 +114,7 @@ function demarrerChasse() {
     document.querySelector("#btnDemarrerNouvelleChasse").removeAttribute("hidden");
     // Affichage du lien vers google map
     document.querySelector("#lienChercherIndices").removeAttribute("hidden");
-    
+    window.location.reload();
 }
 //Réactive le bouton débuter chasse quand on clique sur le bouton Voulez-vous démarrer une nouvelle chassse
 function unlockButton() {
