@@ -69,6 +69,9 @@ function initialiser() {
     document.querySelector("#audio_transcription").innerHTML = objJSONepigraphes[intIdFicheCourante].AUDIO.TRANSCRIPTION;
     //CREDIT
     document.querySelector("#audio_transcription").innerHTML = objJSONepigraphes[intIdFicheCourante].AUDIO.CREDIT;
+
+    // domaine 
+    document.querySelector("#domaine").innerHTML = objJSONepigraphes[intIdFicheCourante].DOMAINE;
 }
 
 
