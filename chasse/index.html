@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Chasse aux Épigraphes</title>
-    <link rel="stylesheet" href="/assets/css/maitre/styleSheet.css">
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
-    <script src="/assets/js/menu.js" defer></script>
-    <script src="/chasse/chasse.js" defer ></script>
-    <script src="/assets/js/epigraphes.js" defer ></script>
+    <link rel="stylesheet" href="../assets/css/maitre/styleSheet.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+    <script src="../assets/js/menu.js" defer></script>
+    <script src="../chasse/chasse.js" defer ></script>
+    <script src="../assets/js/epigraphes.js" defer ></script>
   </head>
   <body>
     <header>
@@ -52,9 +52,16 @@
           <h2>Tableau du jeu de chasse aux épigraphes</h2>
           <div class="content__piger_chasse">
             <div class="content__piger_chasse_liste">
-              <span id="personnageIndice"class="enigme_boites ">Personnage</span>
-              <span id="objetIndice"class="enigme_boites ">Objet</span>
-              <span id="lieuIndice"class="enigme_boites ">Lieu</span>
+              <div id="personnageIndice" class="enigme_boites">
+              <span id="personnageIndice"class="">Personnage</span><br>
+              <!-- <img src="../assets/images/imageOptimisees/175/e0001.png" alt="personnage"> -->
+              </div>
+              <div id="objetIndice" class="enigme_boites">
+              <span id="objetIndice"class="">Objet</span>
+              </div>
+              <div id="lieuIndice" class="enigme_boites">
+              <span id="lieuIndice"class="">Lieu</span>
+              </div>
             </div>
             <p id="messageEtatChasse">Aucune chasse en cours</p>
             <p id="zoneEnigme" hidden>
@@ -68,7 +75,7 @@
             <button type="button" id="btnConcours">Participer au concours</button>
         </div>
 
-        <a id="lienChercherIndices" href="/galerie/index.html" hidden>Chercher des indices</a>
+        <a id="lienChercherIndices" href="../galerie/index.html" hidden>Chercher des indices</a>
         <button type="button" id="btnDemarrerNouvelleChasse" class="btnDemarrerNouvelleChasse" hidden>Voulez-vous démarrer une nouvelle chasse?</button>
           <button type="button"id="btnDebuterChasse"class="btn_chasse"> Piger une chasse</button>
         </div>
