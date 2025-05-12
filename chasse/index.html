@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Chasse aux Épigraphes</title>
-    <link rel="stylesheet" href="/assets/css/maitre/styleSheet.css">
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
-    <script src="/assets/js/menu.js" defer></script>
-    <script src="/chasse/chasse.js" defer ></script>
-    <script src="/assets/js/epigraphes.js" defer ></script>
+    <link rel="stylesheet" href="../assets/css/maitre/styleSheet.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+    <script src="../assets/js/menu.js" defer></script>
+    <script src="../chasse/chasse.js" defer ></script>
+    <script src="../assets/js/epigraphes.js" defer ></script>
   </head>
   <body>
     <header>
@@ -19,10 +19,10 @@
         </div>
           <nav class="header__nav">
             <ul class="nav__list">
-              <li class="nav__list-item"><a href="/accueil/index.html" class="nav__link">Accueil</a></li>
-              <li class="nav__list-item"><a href="/chasse/index.html" class="nav__link">Chasse aux épigraphes</a></li>
-              <li class="nav__list-item"><a href="/galerie/index.html" class="nav__link">Galerie de personnages</a></li>
-              <li class="nav__list-item"><a href="/carte/index.html" class="nav__link">Carte</a></li>
+              <li class="nav__list-item"><a href="../accueil/index.html" class="nav__link">Accueil</a></li>
+              <li class="nav__list-item"><a href="../chasse/index.html" class="nav__link">Chasse aux épigraphes</a></li>
+              <li class="nav__list-item"><a href="../galerie/index.html" class="nav__link">Galerie de personnages</a></li>
+              <li class="nav__list-item"><a href="../carte/index.html" class="nav__link">Carte</a></li>
             </ul>
           </nav>
       </div>
@@ -52,9 +52,16 @@
           <h2>Tableau du jeu de chasse aux épigraphes</h2>
           <div class="content__piger_chasse">
             <div class="content__piger_chasse_liste">
-              <span id="personnageIndice"class="enigme_boites ">Personnage</span>
-              <span id="objetIndice"class="enigme_boites ">Objet</span>
-              <span id="lieuIndice"class="enigme_boites ">Lieu</span>
+              <div id="personnageIndice" class="enigme_boites">
+              <span id="personnageIndice"class="">Personnage</span><br>
+              <!-- <img src="../assets/images/imageOptimisees/175/e0001.png" alt="personnage"> -->
+              </div>
+              <div id="objetIndice" class="enigme_boites">
+              <span id="objetIndice"class="">Objet</span>
+              </div>
+              <div id="lieuIndice" class="enigme_boites">
+              <span id="lieuIndice"class="">Lieu</span>
+              </div>
             </div>
             <p id="messageEtatChasse">Aucune chasse en cours</p>
             <p id="zoneEnigme" hidden>
@@ -68,7 +75,7 @@
             <button type="button" id="btnConcours">Participer au concours</button>
         </div>
 
-        <a id="lienChercherIndices" href="/galerie/index.html" hidden>Chercher des indices</a>
+        <a id="lienChercherIndices" href="../galerie/index.html" hidden>Chercher des indices</a>
         <button type="button" id="btnDemarrerNouvelleChasse" class="btnDemarrerNouvelleChasse" hidden>Voulez-vous démarrer une nouvelle chasse?</button>
           <button type="button"id="btnDebuterChasse"class="btn_chasse"> Piger une chasse</button>
         </div>
@@ -78,18 +85,18 @@
     <footer>
       <nav class="footer__nav">
           <ul class="footer__ul">
-            <li><a href="/accueil/index.html">Accueil</a></li>
+            <li><a href="../accueil/index.html">Accueil</a></li>
             <li><a href="/chasse/index.html">Chasse aux épigraphes</a></li>
-            <li><a href="/galerie/index.html">Galerie de personnages</a></li>
-            <li><a href="/carte/index.html">Carte</a></li>
+            <li><a href="../galerie/index.html">Galerie de personnages</a></li>
+            <li><a href="../carte/index.html">Carte</a></li>
           </ul>
         </nav>
   
         <div class-="footer__reseaux-sociaux">
-          <img src="/assets/images/reseaux/facebook.png" class="facebook" alt="Logo facebook">
-          <img src="/assets/images/reseaux/instagram.png" class="instagram" alt="Logo instagram">
-          <img src="/assets/images/reseaux/X.png" class="X" alt="Logo X">
-          <img src="/assets/images/reseaux/youtube.png" class="youtube" alt="Logo youtube">
+          <img src="../assets/images/reseaux/facebook.png" class="facebook" alt="Logo facebook">
+          <img src="../assets/images/reseaux/instagram.png" class="instagram" alt="Logo instagram">
+          <img src="../assets/images/reseaux/X.png" class="X" alt="Logo X">
+          <img src="../assets/images/reseaux/youtube.png" class="youtube" alt="Logo youtube">
         </div>
   
         <div class="footer__credit-textes">
