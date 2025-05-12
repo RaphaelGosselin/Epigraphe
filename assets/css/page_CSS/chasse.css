@@ -1,31 +1,24 @@
+.enigme_boites span {
+    background-color: var(--);
+}
 .center-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
     text-align: center;
 }
-.enigme {
-    position: relative;
-    display: inline-block;
-    color: var(--color-texte); /* Text color */
-    width: 36rem; /* Fixed width */
-    height: 12rem; /* Fixed height */
-    line-height: 12rem; /* Center text vertically */
-    text-align: center; /* Center text horizontally */
-    background-color: var(--color-nav); /* Square color */
-}
-@media(min-width:700px){
-    .enigme{
-        width: 70rem;
+@media(min-width: 700px){
+    .center-wrapper {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
-@media(min-width:1000px){
-    .enigme {
-        width: 100rem;
+@media(min-width: 1000px){
+    .center-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 .enigme_boites {
@@ -33,22 +26,17 @@
     display: inline-block;
     margin-bottom: 0.3rem;
     color: var(--color-texte); /* Text color */
-    width: 36rem; /* Fixed width */
-    height: 30rem; /* Fixed height */
-    line-height: 30rem; /* Center text vertically */
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Center text horizontally */
-    background-color: var(--color-nav); /* Square color */
 }
 @media(min-width:700px){
     .enigme_boites{
         width: 23rem;
+        margin: 0rem 0.05rem 0rem 0.05rem;
     }
 }
 @media(min-width:1000px){
     .enigme_boites {
-        width: 33.03rem;
+        width: 33rem;
+        margin: 0rem 0rem 0rem 0rem;
     }
 }
 .btn_piger {
