@@ -1,4 +1,5 @@
 
+
 main{
     display: flex;
     flex-direction: column;
@@ -7,24 +8,16 @@ main{
     background-color: var(--color-page);
     padding: 20px;
 }
+
 .picture_bio {
-    width: 90%;
-    height: 90%;
+    width: auto;
+    height: auto;
     object-fit: cover;
     border: 10px solid var("#A64E20");
     max-width: 405px;
     min-width: 242px;
     
     
-}
- @media (min-width: 530px) {
-    .picture_bio img{
-        position: absolute;
-      width: 90%;
-      height: 90%;
-     object-fit: cover;
-     border: 10px solid var("#A64E20");
-    }
 }
 .epigraphes_personnage{
      width: 100%;
