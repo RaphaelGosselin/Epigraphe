@@ -7,6 +7,7 @@
     <title>Edmund Alleyn - Chasse aux épigraphes</title>
     <link rel="stylesheet" href="/assets/css/maitre/styleSheet.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="../assets/css/page_CSS/personnage.css">
     <script defer src="../assets/js/menu.js"></script>
     <script defer src="../assets/js/epigraphes.js"></script>
     <script defer src="fiche.js"></script>
@@ -43,9 +44,11 @@
     <main>
         <section>
             <h1><span id="prenom">Edmund</span><span id="nom">Alleyn</span></h1>
-            <p>Arts visuels</p>
+            <p><span id="domaine">Arts visuels</span></p>
             <figure>
-                <picture id="url_image" class="picture_bio"> <img src="../assets/images/imageOptimisees/402/e0001.png" alt="e0001"></picture>
+                <picture id="url_image"> 
+                    <img src="../assets/images/imageOptimisees/402/e0001.png" alt="e0001" class="picture_bio">
+                </picture>
                 <figcaption>
                     <span id="titre_image">Edmund Alleyn dans son atelier</span> <br>
                     ©<span id="credit_image">Gabor Szilasi</span>
@@ -74,7 +77,7 @@
         <section>
             <h2>Localisation</h2>
             <figure>
-                <img src="../assets/images/imageOptimisees/image_zoomGoogle_maps/e0001-maps.png" alt="Plan rapproché de l'emplacement sur la carte géographique"
+                <img class="map_localisation" src="../assets/images/imageOptimisees/image_zoomGoogle_maps/e0001-maps.png" alt="Plan rapproché de l'emplacement sur la carte géographique"
                     id="carteZoom">
                 <figcaption>
                     <h3>Arrondissement:
@@ -92,7 +95,10 @@
         <section>
             <h2>Plaque commémorative</h2>
             <figure>
-                <img src="../assets/images/epigraphes/e0001.png" alt="Épigraphe de Edmund Alleyn" id="url_plaque">
+                <picture class="epigraphes_personnage">
+                    <img class="epigraphes_personnage" src="../assets/images/epigraphes/e0001.png" alt="Épigraphe de Edmund Alleyn" id="url_plaque" >
+                </picture>
+                
                 <figcaption id="transcript">Ici vécut Edmund Alleyn(1931-2004). Peintre et artiste polyvalent, créateur
                     d'une oeuvre originale et en constante mutation.
                 </figcaption>
@@ -128,7 +134,7 @@
             <form>
                 <fieldset>
                     <legend>
-                        <h2>Soumettre cette fiche comme élément trouvé <span id="progressionChasse">(0 indice trouvé sur 3)</span></h2>
+                        <h2 class="soumettre_reponse_type">Soumettre cette fiche comme élément trouvé <span id="progressionChasse">(0 indice trouvé sur 3)</span></h2>
                     </legend>
                     <ul>
                         <li>
@@ -138,25 +144,28 @@
                         </li>
                         <li>
                             <input type="radio" name="formChasse" value="lieu" id="lieu">
-                            <label for="lieu">Lieu</label>
+                              <label for="lieu">Lieu</label>
+                           </input>
+                            
                         </li>
                         <li>
-                            <input type="radio" name="formChasse" value="objet" id="objet">
-                            <label for="objet">Objet</label>
+                            <input type="radio" name="formChasse" value="objet" id="objet"> 
+                              <label for="objet">Objet</label>
+                            </imput>
                         </li>
                     </ul>
                 </fieldset>
                 <p id="message"></p>
-                <p>
-                    <button id="btnSoumettre" type="button">Soumettre</button>
+                <p class="zone_soumettre_personnage">
+                    <button id="btnSoumettre" type="button" class="bouton_soumettre_personnage">Soumettre</button>
                 </p>
             </form>
             <ul>
                 <li>
-                    <a href="../chasse/index.html">Vérifier votre progression de la chasse</a>
+                    <a  class="li_a"  href="../chasse/index.html">Vérifier votre progression de la chasse</a>
                 </li>
                 <li>
-                    <a href="../carte/index.html">Poursuivre la chasse </a>
+                    <a class="li_a" href="../carte/index.html">Poursuivre la chasse </a>
                 </li>
             </ul>
         </div>
@@ -176,7 +185,7 @@
           <img src="/assets/images/reseaux/instagram.png" class="instagram" alt="Logo instagram">
           <img src="/assets/images/reseaux/X.png" class="X" alt="Logo X">
           <img src="/assets/images/reseaux/youtube.png" class="youtube" alt="Logo youtube">
-        </div>
+        </div>25
   
         <div class="footer__credit-textes">
           <p class="footer__paragraphe1"> Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823</p>

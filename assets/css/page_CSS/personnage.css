@@ -1,15 +1,119 @@
 
-
-.picture_bio img{
-    width: 100%;
-    height: 100%;
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-page);
+    padding: 20px;
+}
+.picture_bio {
+    width: 90%;
+    height: 90%;
     object-fit: cover;
     border: 10px solid var("#A64E20");
+    max-width: 405px;
+    min-width: 242px;
+    
+    
 }
  @media (min-width: 530px) {
     .picture_bio img{
         position: absolute;
-        height: 50%;
-        height: auto;
+      width: 90%;
+      height: 90%;
+     object-fit: cover;
+     border: 10px solid var("#A64E20");
     }
+}
+.epigraphes_personnage{
+     width: 100%;
+     min-width:200px;
+     max-width: 400px;
+    
+     
+
+}
+.map_localisation{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 10px solid var("#A64E20");
+    min-width: 50%;
+    max-width: 510px;
+    align-self:center;
+}
+.bouton_soumettre_personnage{
+    
+    margin:10px;
+    padding:10px;
+    background-color: var(--color-btn);
+    color:var(--color-page);
+    font-family: abril fatface, sans-serif;
+    border-radius: 10px;
+    
+}
+.zone_soumettre_personnage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+fieldset{ 
+
+    border: 2px solid var(--color-btn);
+    border-radius: 10px;
+
+    margin: 10px;
+    background-color: var(--color-page);
+    height: 100%;
+
+   
+}
+bouton_soumettre_personnage:hover{
+    cursor: pointer;
+    background-color: var(--color-btn);
+    color: var(--color-page);
+}
+    .soumettre_reponse_type{
+    font-family: abril fatface, sans-serif;
+    color: var(--color-btn);
+    text-align: center;
+    top: 30px;
+}
+@media (max-width: 1400px) {
+    .soumettre_reponse_type{
+
+    font-size: 20px;
+
+}
+}   
+
+@media (max-width: 675px) and (min-width: 509px) {
+    .soumettre_reponse_type{
+        font-size:15px;
+    }
+}
+@media (max-width: 508px) and (min-width: 10px) {
+    .soumettre_reponse_type{
+        font-size:11px;
+        
+    }
+}
+li{
+    list-style: none;;
+}
+input{
+    background-color: var(--color-btn);
+    color:var(--color-page);
+}
+input, label{
+    font-family:"crimson textes", sans-serif;
+    color: var(--color-btn);
+    font-size: 15px;
+
+}
+li a{
+    
+    list-style: circle;
 }
