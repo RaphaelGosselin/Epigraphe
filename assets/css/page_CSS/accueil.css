@@ -320,4 +320,15 @@ a {
   background-color: var(--color-btn);
   color: #E4D8CA;
 }
+.nav__link:hover{
+color:black;
+background-color: #E4D8CA;
+}
+.nav__link:focus{
+  border-style:dotted;
+}
+.nav__link--active {
+  background-color: #E4D8CA;
+
+}
 

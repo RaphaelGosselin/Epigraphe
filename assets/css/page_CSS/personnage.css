@@ -61,21 +61,13 @@ fieldset{
     align-self: center;
     background-color: var(--color-page);
     height: 100%;
+    align-items: center;
 
    
 }
-@media (max-width: 1400px) and (min-width: 1000px) {
-     fieldset{
-        max-width: 800px;
-        height: 100%;
-        align-self: center;
 
-     }
-}
-bouton_soumettre_personnage:hover{
-    cursor: pointer;
-    background-color: var(--color-btn);
-    color: var(--color-page);
+.bouton_soumettre_personnage{
+    align-self: center;
 }
     .soumettre_reponse_type{
     font-family: abril fatface, sans-serif;
@@ -125,7 +117,7 @@ input, label{
     font-size: 15px;
 
 }
-li a{
+li{
     
-    list-style: circle;
+    align-self: center;
 }
