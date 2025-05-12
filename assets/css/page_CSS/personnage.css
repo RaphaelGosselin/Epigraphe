@@ -8,6 +8,7 @@
     max-width: 405px;
     min-width: 242px;
     
+    
 }
  @media (min-width: 530px) {
     .picture_bio img{
@@ -50,4 +51,46 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+fieldset{ 
+    list-style:none;
+    border: 2px solid var(--color-btn);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--color-page);
+    height: 100%;
+   
+    text-align: center;
+   
+}
+bouton_soumettre_personnage:hover{
+    cursor: pointer;
+    background-color: var(--color-btn);
+    color: var(--color-page);
+}
+    .soumettre_reponse_type{
+    font-family: abril fatface, sans-serif;
+    color: var(--color-btn);
+    text-align: center;
+    top: 30px;
+}
+@media (max-width: 1400px) {
+    .soumettre_reponse_type{
+
+    font-size: 20px;
+
+}
+}   
+
+@media (max-width: 675px) and (min-width: 509px) {
+    .soumettre_reponse_type{
+        font-size:15px;
+    }
+}
+@media (max-width: 508px) and (min-width: 10px) {
+    .soumettre_reponse_type{
+        font-size:11px;
+        
+    }
 }
