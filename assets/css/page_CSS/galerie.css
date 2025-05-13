@@ -9,6 +9,10 @@
 }
 .personnage_img{
     border: 2px solid var("#A64E20");
+    border-radius: 10px;
+    position: relative;
+    margin: 1%;
+    width: 100%;
 }
 
 .personnage_img figcaption{

@@ -52,16 +52,16 @@ main{
     align-items: center;
     justify-content: center;
 }
-fieldset{ 
+.fieldset_special{ 
 
     border: 2px solid var(--color-btn);
     border-radius: 10px;
-    
-    margin: 10px;
-    align-self: center;
+    margin-left: 20px;
+    margin-right: 20px;
     background-color: var(--color-page);
     height: 100%;
-    align-items: center;
+    
+    
 
    
 }
@@ -120,4 +120,53 @@ input, label{
 li{
     
     align-self: center;
+}
+  
+
+@media (max-width: 675px) and (min-width: 509px) {
+    p, paragraphe_epigraphe{
+        font-size:15px;
+    }
+}
+@media (max-width: 508px) and (min-width: 10px) {
+    p, paragraphe_epigraphe{
+        font-size:11px;
+        
+    }
+}
+
+@media (max-width: 675px) and (min-width: 509px) {
+    .soumettre_reponse_type{
+        font-size:15px;
+    }
+}
+@media (max-width: 508px) and (min-width: 10px) {
+    .soumettre_reponse_type{
+        font-size:11px;
+        
+    }
+}
+h1{
+    font-family:"crimson textes", sans-serif;
+    color: var(--color-btn);
+    text-align: center;
+   
+}
+h2{
+    font-family: abril fatface, sans-serif;
+    color: var(--color-btn);
+    text-align: center;
+}
+@media (max-width: 675px) and (min-width: 509px) {
+    .fieldset_special{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 508px) and (min-width: 10px) {
+    .fieldset_specia{
+        margin: 10px;
+        
+        
+    }
 }
