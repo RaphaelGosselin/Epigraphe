@@ -26,14 +26,14 @@ function initialiser(){
     document.getElementById("lieuIndice").innerHTML = objJSONepigraphes[strIdLieux].CHASSE.INDICE;
     
      document.getElementById("personnagePicture").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdPersonnage}.png">
-                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdPersonnage}.png">
-                                                <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdPersonnage}.png" alt="Flowers" style="width:auto;"></img>`;
+                                                <source media="(min-width:450px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdPersonnage}.png">
+                                                <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/211/1x/${strIdPersonnage}.png" alt="Flowers" style="width:auto;"></img>`;
     document.getElementById("personnageObjet").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdObjet}.png">
-                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdObjet}.png">
-                                                <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdObjet}.png" alt="Flowers" style="width:auto;"></img>`;
+                                                <source media="(min-width:450px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdObjet}.png">
+                                                <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/211/1x/${strIdObjet}.png" alt="Flowers" style="width:auto;"></img>`;
     document.getElementById("personnageLieux").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdLieux}.png">
-                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdLieux}.png">
-                                                <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdLieux}.png" alt="Flowers" style="width:auto;"></img>`;
+                                                <source media="(min-width:450px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdLieux}.png">
+                                                <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/211/1x/${strIdLieux}.png" alt="Flowers" style="width:auto;"></img>`;
 
                                                 
     document.querySelector("#personnageSegment").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.INDICE;
@@ -48,24 +48,27 @@ function initialiser(){
     //Condition pour savoir si c'est trouvé
     //Si true change pour trouvé
     if(localStorage.personnage_est_trouve === "true"){
-        console.log(document.getElementById("personnageIndice").innerHTML = objJSONepigraphes[strIdPersonnage].PRENOM + " " + objJSONepigraphes[strIdPersonnage].NOM); 
+        console.log(document.getElementById("personnageIndice").innerHTML = objJSONepigraphes[strIdPersonnage].PRENOM + " " + objJSONepigraphes[strIdPersonnage].NOM);
+        document.getElementById("__parent_personnage").classList.add("style-trouve");
         document.getElementById("personnagePicture").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdPersonnage}.png">
-                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdPersonnage}.png">
-                                                <img src="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdPersonnage}.png" alt="Flowers" style="width:auto;"></img>`;
+                                                <source media="(min-width:450px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdPersonnage}.png">
+                                                <img src="../assets/images/imageOptimisees/images_opti_chasse_trouve/211/1x/${strIdPersonnage}.png" alt="Flowers" style="width:auto;"></img>`;
     }
     //Si true change pour trouvé
     if(localStorage.objet_est_trouve === "true"){
         document.getElementById("objetIndice").innerHTML = objJSONepigraphes[strIdObjet].PRENOM + " " + objJSONepigraphes[strIdObjet].NOM;
+        document.getElementById("__parent_personnage-objet").classList.add("style-trouve");
         document.getElementById("personnageObjet").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdObjet}.png">
-                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdObjet}.png">
-                                                <img src="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdObjet}.png" alt="Flowers" style="width:auto;"></img>`;
+                                                <source media="(min-width:450px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdObjet}.png">
+                                                <img src="../assets/images/imageOptimisees/images_opti_chasse_trouve/211/1x/${strIdObjet}.png" alt="Flowers" style="width:auto;"></img>`;
     }
     //Si true change pour trouvé
     if(localStorage.lieu_est_trouve === "true"){
         document.getElementById("lieuIndice").innerHTML = objJSONepigraphes[strIdLieux].PRENOM + " " + objJSONepigraphes[strIdLieux].NOM;
+        document.getElementById("__parent_personnage-lieu").classList.add("style-trouve");
         document.getElementById("personnageLieux").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdLieux}.png">
-                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdLieux}.png">
-                                                <img src="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdLieux}.png" alt="Flowers" style="width:auto;"></img>`;
+                                                <source media="(min-width:450px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdLieux}.png">
+                                                <img src="../assets/images/imageOptimisees/images_opti_chasse_trouve/211/1x/${strIdLieux}.png" alt="Flowers" style="width:auto;"></img>`;
     }
     //Si les 3 dans local storage sont a true on active vers la page concourt
     if(localStorage.personnage_est_trouve === "true" &&
@@ -112,14 +115,14 @@ function demarrerChasse() {
     document.getElementById("lieuIndice").innerHTML = objJSONepigraphes[strIdLieux].CHASSE.INDICE;
 
      document.getElementById("personnagePicture").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdPersonnage}.png">
-                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdPersonnage}.png">
-                                                <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdPersonnage}.png" alt="Flowers" style="width:auto;"></img>`;
+                                                <source media="(min-width:450px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdPersonnage}.png">
+                                                <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/211/1x/${strIdPersonnage}.png" alt="Flowers" style="width:auto;"></img>`;
     document.getElementById("personnageObjet").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdObjet}.png">
-                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdObjet}.png">
-                                                <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdObjet}.png" alt="Flowers" style="width:auto;"></img>`;
+                                                <source media="(min-width:450px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdObjet}.png">
+                                                <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/211/1x/${strIdObjet}.png" alt="Flowers" style="width:auto;"></img>`;
     document.getElementById("personnageLieux").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdLieux}.png">
-                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdLieux}.png">
-                                                <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdLieux}.png" alt="Flowers" style="width:auto;"></img>`;
+                                                <source media="(min-width:450px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdLieux}.png">
+                                                <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/211/1x/${strIdLieux}.png" alt="Flowers" style="width:auto;"></img>`;
     //Affiche les réponses
     document.querySelector("#personnageSegment").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.INDICE;
     document.querySelector("#objetSegment").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.INDICE;

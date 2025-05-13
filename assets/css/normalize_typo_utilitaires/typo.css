@@ -180,5 +180,15 @@ main span{
 }
 
 .segment {
-    font-size: 1.9em;
+    font-size: 0.9em; 
 }
+@media (min-width:600px) {
+        .segment {
+            font-size: 1.4rem;
+        }
+    }
+@media (min-width:800px) {
+        .segment {
+            font-size: 2.9rem;
+        }
+    }

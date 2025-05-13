@@ -57,12 +57,10 @@
 }
 figure img {
     border-radius: 20px;
+    
 }
-.section__segments {
-    background-color: var(--color-nav);
-    max-width: 800px;
-    align-self:center ;
-   border-radius: 20px;
-   margin-left:60px;
-   margin-right:30px;
+
+.style-trouve {
+    background-color: rgb(133, 192, 133);
+    border-color: green;
 }
