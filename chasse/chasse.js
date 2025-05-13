@@ -132,7 +132,7 @@ function demarrerChasse() {
     document.querySelector("#btnDemarrerNouvelleChasse").removeAttribute("hidden");
     // Affichage du lien vers google map
     document.querySelector("#lienChercherIndices").removeAttribute("hidden");
-    
+    window.location.reload();
 }
 //Réactive le bouton débuter chasse quand on clique sur le bouton Voulez-vous démarrer une nouvelle chassse
 function unlockButton() {
