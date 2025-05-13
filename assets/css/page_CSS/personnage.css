@@ -8,12 +8,13 @@ main{
     background-color: var(--color-page);
     padding-left:20px;
     text-align: center;
-    text-justify: center;;
-}
+    text-justify: center;
+        margin-left: 10px;
+    margin-right: 10px;
 
+}
 .picture_bio {
-    width: auto;
-    height: auto;
+
     object-fit: cover;
     border: 10px solid var("#A64E20");
     max-width: 405px;
@@ -174,14 +175,14 @@ h2{
     margin-left: 10px;
     margin-right: 10px;
     justify-content: center;
+    text-align: center;
 }
 
 @media (max-width: 320px) {
     .notes_biographiques {
-        font-size: 12px; /* Réduire la taille de la police */
-        margin-left: 5px; /* Réduire les marges */
-        margin-right: 5px;
-        text-align: center; /* Centrer le texte */
+        font-size: 12px !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        text-align: center !important;
     }
 }
-
