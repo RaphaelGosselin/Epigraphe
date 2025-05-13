@@ -48,18 +48,24 @@ function initialiser(){
     //Condition pour savoir si c'est trouvé
     //Si true change pour trouvé
     if(localStorage.personnage_est_trouve === "true"){
-        document.querySelector("#personnageMessageTrouve").removeAttribute("hidden");
-        document.getElementById("personnageIndice").innerHTML = objJSONepigraphes[strIdPersonnage].PRENOM + " " + objJSONepigraphes[strIdPersonnage].NOM; 
+        console.log(document.getElementById("personnageIndice").innerHTML = objJSONepigraphes[strIdPersonnage].PRENOM + " " + objJSONepigraphes[strIdPersonnage].NOM); 
+        document.getElementById("personnagePicture").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdPersonnage}.png">
+                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdPersonnage}.png">
+                                                <img src="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdPersonnage}.png" alt="Flowers" style="width:auto;"></img>`;
     }
     //Si true change pour trouvé
     if(localStorage.objet_est_trouve === "true"){
-        document.querySelector("#objetMessageTrouve").removeAttribute("hidden");
         document.getElementById("objetIndice").innerHTML = objJSONepigraphes[strIdObjet].PRENOM + " " + objJSONepigraphes[strIdObjet].NOM;
+        document.getElementById("personnageObjet").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdObjet}.png">
+                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdObjet}.png">
+                                                <img src="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdObjet}.png" alt="Flowers" style="width:auto;"></img>`;
     }
     //Si true change pour trouvé
     if(localStorage.lieu_est_trouve === "true"){
-        document.querySelector("#lieuMessageTrouve").removeAttribute("hidden");
         document.getElementById("lieuIndice").innerHTML = objJSONepigraphes[strIdLieux].PRENOM + " " + objJSONepigraphes[strIdLieux].NOM;
+        document.getElementById("personnageLieux").innerHTML = `<source media="(min-width:700px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdLieux}.png">
+                                                <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdLieux}.png">
+                                                <img src="../assets/images/imageOptimisees/images_opti_chasse_trouve/315/1x/${strIdLieux}.png" alt="Flowers" style="width:auto;"></img>`;
     }
     //Si les 3 dans local storage sont a true on active vers la page concourt
     if(localStorage.personnage_est_trouve === "true" &&
@@ -72,6 +78,11 @@ function initialiser(){
         document.querySelector("#lienChercherIndices").setAttribute("hidden", "");
         document.querySelector("#btnDemarrerNouvelleChasse").setAttribute("hidden", "");
         document.querySelector("#btnDebuterChasse").remove("disabled");
+
+        document.querySelector("#personnageSegment").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.REPONSE;
+        document.querySelector("#objetSegment").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.REPONSE;
+        document.querySelector("#lieuSegment").innerHTML = objJSONepigraphes[strIdLieux].CHASSE.REPONSE;
+       
      }
 }
 function demarrerChasse() {
@@ -110,9 +121,9 @@ function demarrerChasse() {
                                                 <source media="(min-width:400px)" srcset="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdLieux}.png">
                                                 <img src="../assets/images/imageOptimisees/image_opti_chasse_pastrouve/315/1x/${strIdLieux}.png" alt="Flowers" style="width:auto;"></img>`;
     //Affiche les réponses
-    document.querySelector("#personnageSegment").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.REPONSE;
-    document.querySelector("#objetSegment").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.REPONSE;
-    document.querySelector("#lieuSegment").innerHTML = objJSONepigraphes[strIdLieux].CHASSE.REPONSE;
+    document.querySelector("#personnageSegment").innerHTML = objJSONepigraphes[strIdPersonnage].CHASSE.INDICE;
+    document.querySelector("#objetSegment").innerHTML = objJSONepigraphes[strIdObjet].CHASSE.INDICE;
+    document.querySelector("#lieuSegment").innerHTML = objJSONepigraphes[strIdLieux].CHASSE.INDICE;
     //boutons
     document.querySelector("#btnDebuterChasse").setAttribute("disabled", "");
     document.querySelector("#btnDemarrerNouvelleChasse").removeAttribute("hidden");
