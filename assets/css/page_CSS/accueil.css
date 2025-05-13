@@ -1,6 +1,6 @@
 body {
     background-color: var(--color-page);
-    background-image: url(../../images/blackline.jpg); ;
+    background-image: url(blackline.jpg); ;
     background-color: rgba(228,216,202,0.8);
     background-blend-mode: lighten;
     background-size: 55%;
