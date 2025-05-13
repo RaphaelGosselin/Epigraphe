@@ -10,6 +10,7 @@
     flex-direction: column;
     max-width: 80vw;
     margin: 0 auto;
+   
 }
 @media(min-width:800px){
     .content__piger_chasse_liste {
@@ -22,7 +23,8 @@
     margin-top: 0.2rem;
     border: 2px solid var(--color-border);
     background-color: var(--color-nav);
-    width: 100%;
+    width: 110%;
+
 }
 .__parent_personnage figure {
     margin: 0rem;
