@@ -18,6 +18,10 @@ main {
     padding-left: 50px;
     padding-right:50px;
 }
+#message {
+    padding-left: 50px;
+    font-size: 2rem;
+}
 @media(min-width:700px){
     main {
         max-width: 1000px;
