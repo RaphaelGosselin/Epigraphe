@@ -1,6 +1,6 @@
-html {
+body {
     background-color: var(--color-page);
-    background-image: url(/assets/images/blackline.png) ;
+    background-image: url(/assets/images/blackline.png); ;
     background-color: rgba(228,216,202,0.8);
     background-blend-mode: lighten;
     background-size: 55%;
@@ -319,5 +319,16 @@ a {
   font-family: abril fatface, sans-serif;
   background-color: var(--color-btn);
   color: #E4D8CA;
+}
+.nav__link:hover{
+color:black;
+background-color: #E4D8CA;
+}
+.nav__link:focus{
+  border-style:dotted;
+}
+.nav__link--active {
+  background-color: #E4D8CA;
+
 }
 

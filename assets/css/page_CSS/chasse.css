@@ -7,7 +7,27 @@
 /* parent */
 .content__piger_chasse_liste {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    max-width: 80vw;
+    margin: 0 auto;
+   
+}
+@media(min-width:800px){
+    .content__piger_chasse_liste {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+.__parent_personnage{
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    border: 2px solid var(--color-border);
+    background-color: var(--color-nav);
+    width: 110%;
+
+}
+.__parent_personnage figure {
+    margin: 0rem;
 }
 /* button */
 .btn_piger {
@@ -36,4 +56,14 @@
 .btn_chasse {
     margin:10px;
     padding:10px;
+}
+figure img {
+    border-radius: 20px;
+    
+}
+
+
+.style-trouve {
+    background-color: rgb(133, 192, 133);
+    border-color: green;
 }

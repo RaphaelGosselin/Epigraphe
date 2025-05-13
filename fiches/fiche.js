@@ -112,62 +112,39 @@ function validerPieceConviction() {
         }
         //SI le bouton radio n'est pas égale à nul : on rentre dans la condition 
         if (refRadioCoche !== null) {
+            if (
+    localStoragePersonnage == obtenirValeurUrlParam('id') &&
+    refRadioCoche.value == "personnage"
+) {
+    const indicePersonnage = objJSONepigraphes[obtenirValeurUrlParam('id')].CHASSE.INDICE;
+    refMessage.innerHTML = `Bravo! Vous avez trouvé : « ${indicePersonnage} ».`;
+    refMessage.style.color = "green";
+    localStorage.personnage_est_trouve = true;
+} else if (
+    localStorageObjet == obtenirValeurUrlParam('id') &&
+    refRadioCoche.value == "objet"
+) {
+    const indiceObjet = objJSONepigraphes[obtenirValeurUrlParam('id')].CHASSE.INDICE;
+    refMessage.innerHTML = `Bravo! Vous avez trouvé : « ${indiceObjet} ».`;
+    refMessage.style.color = "green";
+    localStorage.objet_est_trouve = true;
+} else if (
+    localStorageLieu == obtenirValeurUrlParam('id') &&
+    refRadioCoche.value == "lieu"
+) {
+    const indiceLieu = objJSONepigraphes[obtenirValeurUrlParam('id')].CHASSE.INDICE;
+    refMessage.innerHTML = `Bravo! Vous avez trouvé : « ${indiceLieu} ».`;
+    refMessage.style.color = "green";
+    localStorage.lieu_est_trouve = true;
+} else {
+    refMessage.innerHTML = "Mauvaise Réponse";
+    refMessage.style.color = "red";
+}
             //SI 
             // - l'id de la querystring est == à celle de personnage dans le local storage 
             // - ET que la valeur du bouton radio est égale à "personnage"
             // - ALORS affiche le message de félicitation
-            if (
-                localStoragePersonnage
-                ==
-                obtenirValeurUrlParam('id')
-                &&
-                refRadioCoche.value
-                ==
-                "personnage"
-            ) {
-                refMessage.innerHTML = "Bravo! Vous avez trouvé « texte de l’indice qui provient du fichier json »."
-                refMessage.style.color = "green";
-                localStorage.personnage_est_trouve = true;
-            }
-            //SI 
-            // - l'id de la querystring est == à celle d'objet dans le local storage 
-            // - ET que la valeur du bouton radio est égale à "objet"
-            // - ALORS affiche le message de félicitation
-            else if (
-                localStorageObjet
-                ==
-                obtenirValeurUrlParam('id')
-                &&
-                refRadioCoche.value
-                ==
-                "objet"
-            ) {
-                refMessage.innerHTML = "Bravo! Vous avez trouvé « texte de l’indice qui provient du fichier json »."
-                refMessage.style.color = "green";
-                localStorage.objet_est_trouve = true;
-            }
-            //SI 
-            // - l'id de la querystring est == à celle d'lieu dans le local storage 
-            // - ET que la valeur du bouton radio est égale à "lieu"
-            // - ALORS affiche le message de félicitation
-            else if (
-                localStorageLieu
-                ==
-                obtenirValeurUrlParam('id')
-                &&
-                refRadioCoche.value
-                ==
-                "lieu"
-            ) {
-                refMessage.innerHTML = "Bravo! Vous avez trouvé « texte de l’indice qui provient du fichier json »."
-                refMessage.style.color = "green";
-                localStorage.lieu_est_trouve = true;
-            }
-            //SINON affiche le message d'erreur
-            else {
-                refMessage.innerHTML = "Mauvaise Réponse";
-                refMessage.style.color = "red";
-            }
+            
         }
     }
 

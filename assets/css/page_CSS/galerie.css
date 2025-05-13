@@ -8,8 +8,7 @@
 
 }
 .personnage_img{
-  
-    border: 10px solid var("#A64E20");
+    border: 2px solid var("#A64E20");
 }
 
 .personnage_img figcaption{
@@ -49,7 +48,3 @@
 
 }
 
-.image_galerie {
-    border:var(--color-border) solid 6px;
-    border-radius: 10px;
-}
