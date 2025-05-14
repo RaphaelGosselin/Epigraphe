@@ -1,0 +1,3 @@
+[submodule "Epigraphe"]
+    path = Epigraphe
+    url = https://github.com/RaphaelGosselin/Epigraphe.git
