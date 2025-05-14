@@ -1,11 +1,4 @@
-body {
-    background-color: var(--color-page);
-    background-image: url(/assets/images/blackline.png); ;
-    background-color: rgba(228,216,202,0.8);
-    background-blend-mode: lighten;
-    background-size: 55%;
 
-}
 /*VIDEO */
 .video_container {
     position:relative;
@@ -14,7 +7,16 @@ body {
     padding-top:50px;
     max-width: 100rem;
     margin: 0 auto;
+
 }
+.image__intro {
+  display: block;
+  width: 100%;       /* Prend toute la largeur disponible */
+  height: auto;      /* Garde les proportions */
+  max-width: 100rem; /* Limite maximale si besoin */
+  margin: 0 auto;    /* Centre horizontalement */
+}
+
 .presentation {
     border:10px solid var(--color-border);
     max-width:100%;
@@ -32,10 +34,13 @@ nav>ul {
 /* logo */
 .header__img {
   width: 10rem;
+  
 }
 .header__logo {
   width: 100%;
+  
 }
+
 .header__nav{
   text-align: right;
   /* align-self: center; */
@@ -258,7 +263,7 @@ a {
   
 }
 /*Requête média*/
-@media (min-width:600px) {
+@media (min-width:800px) {
   footer {
       background-color: var(--color-background);
       text-align: center;
@@ -278,31 +283,54 @@ a {
 }
 
 
-/*TEXTE ET IMAGE INFORMATIVES */
-@media (min-width:600px) {
-    .section_intro{
-    position:relative;
+/* -------- GRANDS ÉCRANS -------- */
+@media (min-width: 800px) {
+  .section_intro {
+    position: relative;
     display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding:40px;
-      max-width: 100rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 100rem;
     margin: 0 auto;
-    
-    }
-    .intro_image img {
+  }
+
+  .intro_image img {
     max-width: 100%;
-      height: auto;
-      border: 8px solid black;
-    }
-    .intro_text {
-        max-width: 50%;
-      padding-left: 40px;
-      color: #4c2e1a;
-      font-size: 18px;
-      line-height: 1.6;
-    }
+    height: auto;
+    border: 8px solid black;
+  }
+
+  .intro_text {
+    max-width: 50%;
+    padding-left: 40px;
+    color: #4c2e1a;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left; /* Meilleure lisibilité sur grand écran */
+  }
 }
+
+/* -------- PETITS ÉCRANS -------- */
+@media (max-width: 599px) {
+  .section_intro {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .intro_text {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .intro_image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .paragraphe_btn {
   text-align: center;
   color: #4c2e1a;

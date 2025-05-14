@@ -34,3 +34,14 @@ main {
     border-style: dotted;
     
 }
+body {
+    background-color: var(--color-page);
+    background-image: url(../../images/favicon.png);
+    background-color: rgba(228,216,202,0.8);
+    background-blend-mode: lighten;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
